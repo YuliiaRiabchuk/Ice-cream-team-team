@@ -1,2 +1,27 @@
 @import './common';
-@import './example';
+
+
+// utils styles
+@import './utils/wars';
+
+
+// base styles
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+
+// layouts styles 
+@import './layouts/hero-header';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+
+// components styles 
+@import './components/btn';
+@import './components/social';
