@@ -2,17 +2,52 @@
 
 :root {
     // fonts
-
+    --main-font: 'Montserrat', sans-serif;
+    --title-font: 'Seymour One', sans-serif;
+    --secondary-font:'Roboto', sans-serif;
 
     // text-colors
-
+    --main-text-color: #131313;
+    --black-text-color: #000000;
+    --light-text-color: #FCFCFC;
+    --white-text-color: #FFFFFF;
+    --grey-text-color: #ABABAB;
+    --ginger-text-color: #D6936D;
+    --grey-ginger-text-color: #907E82;
+    --dark-grey-text-color: #7A7A7A;
+    --text-colors9: #000000;
+    --text-colors10: #000000;
 
     // background-colors
-
+    --background-colors6: #84A178;
+    --background-colors6: #AEC6A5;
+    --background-colors6: #9CBE8F;
+    
+    --background-colors6: #9CBE8F;
+    
+    
+    --yellow-bg-color: #F8D24E;
+    --light-yellow-bg-color: #EFD478;
+    
+    --ginger-bg-color: #D6936D;
+    --dark-bg-color: #131313;
+    --black-bg-color: #000000;
+    --light-bg-color: #FCFCFC;
+    --white-bg-color: #FFFFFF;
+    --grey-bg-color: #D9D9D9;
+    --line-grey-color: #E1E1E1;
+    
+    
+    
+    --line-grey-color: #E1E1E1;
 
     // additional colors
+    --substrate-green-color: rgba(156, 190, 143, 0.7);
+    --substrate-yellow-color: rgba(248, 210, 78, 0.7);
+    --substrate-ginger-color: rgba(213, 117, 63, 0.7);
 
-    
+    --background-input-color: rgba(248, 210, 78, 0.1);
+
     // animation
 
 
