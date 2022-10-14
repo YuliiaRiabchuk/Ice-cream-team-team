@@ -2,6 +2,9 @@
 
 // utils styles
 @import './utils/vars';
+
+// components styles
+@import './components/social';
 @import './components/btn';
 
 // base styles
@@ -19,6 +22,9 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 
-// components styles
-
-@import './components/social';
+// modal styles
+@import './layouts/modal-hero';
+@import './layouts/modal-products';
+@import './layouts/modal-about';
+@import './layouts/modal-contacts__our-locations';
+@import './layouts/modal-contacts__franchise';
