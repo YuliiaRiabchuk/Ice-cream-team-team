@@ -1,0 +1,50 @@
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  &__item {
+    padding: 40px 32px;
+    border-radius: 24px;
+    // &__name {
+    //   font-family: 'Montserrat';
+    //   font-style: normal;
+    //   font-weight: 500;
+    //   font-size: 12px;
+    //   line-height: 186%;
+    //   letter-spacing: 0.04em;
+
+    //   color: var(--main-text-color);
+    //   width: 80px;
+    //   background-color: rgba(248, 210, 78, 1);
+    // }
+  }
+}
+
+.contact-list__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+
+  color: var(--main-text-color);
+  background-color: rgba(248, 210, 78, 1);
+}
+
+.contact-list__name-second {
+  width: 130px;
+}
+
+.button {
+  @extend %primary-button;
+  width: 196px;
+  margin-left: auto;
+  margin: auto;
+}
