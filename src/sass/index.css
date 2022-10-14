@@ -1,4 +1,44 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --title-font: "Seymour One", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --main-text-color: #131313;
+  --black-text-color: #000000;
+  --light-text-color: #fcfcfc;
+  --white-text-color: #ffffff;
+  --grey-text-color: #ababab;
+  --dark-grey-text-color: #7a7a7a;
+  --ginger-text-color: #d6936d;
+  --grey-ginger-text-color: #907e82;
+  --green-bg-color: #84a178;
+  --light-green-bg-color: #aec6a5;
+  --yellow-bg-color: #f8d24e;
+  --light-yellow-bg-color: #efd478;
+  --ginger-bg-color: #d6936d;
+  --dark-bg-color: #131313;
+  --black-bg-color: #000000;
+  --light-bg-color: #fcfcfc;
+  --white-bg-color: #ffffff;
+  --grey-bg-color: #d9d9d9;
+  --substrate-green-color: rgba(156, 190, 143, 0.7);
+  --substrate-yellow-color: rgba(248, 210, 78, 0.7);
+  --substrate-ginger-color: rgba(213, 117, 63, 0.7);
+  --background-input-color: rgba(248, 210, 78, 0.1);
+  --chololate-btn-color: #9cbe8f;
+  --stroke-bg-color: #96af8c;
+  --mob-menu-bg-color: #85a279;
+  --tab-menu-bg-color: #97af8d;
+  --line-grey-color: #e1e1e1;
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --button-default-border-bg-color: #f8d24e;
+  --button-hover-focus-border-bg-color: #0a8817;
+  --button-disabled-border-bg-color: #ababab;
+  --button-default-text-icon-color: #131313;
+  --button-focus-text-color: #fcfcfc;
+  --button-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +69,7 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .section {
@@ -38,22 +79,26 @@ body {
 
 .container {
   max-width: 480px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .test {
-  color: red;
+  color: var(--green-bg-color);
 }/*# sourceMappingURL=index.css.map */

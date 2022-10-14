@@ -1,17 +1,15 @@
 @import './common';
 
-
 // utils styles
 @import './utils/vars';
-
+@import './components/btn';
 
 // base styles
 @import './base/reset';
 @import './base/base';
 @import './base/container';
 
-
-// layouts styles 
+// layouts styles
 @import './layouts/hero-header';
 @import './layouts/products';
 @import './layouts/about';
@@ -21,7 +19,6 @@
 @import './layouts/contacts';
 @import './layouts/footer';
 
+// components styles
 
-// components styles 
-@import './components/btn';
 @import './components/social';

@@ -1,51 +1,61 @@
 // UTILS STYLES
 
 :root {
-    // fonts
-    --main-font: 'Montserrat', sans-serif;
-    --title-font: 'Seymour One', sans-serif;
-    --secondary-font:'Roboto', sans-serif;
+  // fonts
 
-    // text-colors
-    --main-text-color: #131313;
-    --black-text-color: #000000;
-    --light-text-color: #FCFCFC;
-    --white-text-color: #FFFFFF;
-    --grey-text-color: #ABABAB;
-    --dark-grey-text-color: #7A7A7A;
-    --ginger-text-color: #D6936D;
-    --grey-ginger-text-color: #907E82;
+  --main-font: 'Montserrat', sans-serif;
+  --title-font: 'Seymour One', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
 
+  // text-colors
 
-    // background-colors
-    --green-bg-color: #84A178;
-    --light-green-bg-color: #AEC6A5;
-    --yellow-bg-color: #F8D24E;
-    --light-yellow-bg-color: #EFD478;
-    --ginger-bg-color: #D6936D;
-    --dark-bg-color: #131313;
-    --black-bg-color: #000000;
-    --light-bg-color: #FCFCFC;
-    --white-bg-color: #FFFFFF;
-    --grey-bg-color: #D9D9D9;
+  --main-text-color: #131313;
+  --black-text-color: #000000;
+  --light-text-color: #fcfcfc;
+  --white-text-color: #ffffff;
+  --grey-text-color: #ababab;
+  --dark-grey-text-color: #7a7a7a;
+  --ginger-text-color: #d6936d;
+  --grey-ginger-text-color: #907e82;
 
-    // additional colors
-    --substrate-green-color: rgba(156, 190, 143, 0.7);
-    --substrate-yellow-color: rgba(248, 210, 78, 0.7);
-    --substrate-ginger-color: rgba(213, 117, 63, 0.7);
+  // background-colors
 
-    --background-input-color: rgba(248, 210, 78, 0.1);
+  --green-bg-color: #84a178;
+  --light-green-bg-color: #aec6a5;
+  --yellow-bg-color: #f8d24e;
+  --light-yellow-bg-color: #efd478;
+  --ginger-bg-color: #d6936d;
+  --dark-bg-color: #131313;
+  --black-bg-color: #000000;
+  --light-bg-color: #fcfcfc;
+  --white-bg-color: #ffffff;
+  --grey-bg-color: #d9d9d9;
 
-    --chololate-btn-color: #9CBE8F;
+  // additional colors
 
-    --stroke-bg-color: #96AF8C;
+  --substrate-green-color: rgba(156, 190, 143, 0.7);
+  --substrate-yellow-color: rgba(248, 210, 78, 0.7);
+  --substrate-ginger-color: rgba(213, 117, 63, 0.7);
 
-    --mob-menu-bg-color: #85A279;
-    --tab-menu-bg-color: #97AF8D;
+  --background-input-color: rgba(248, 210, 78, 0.1);
 
-    --line-grey-color: #E1E1E1;
+  --chololate-btn-color: #9cbe8f;
 
-    // animation
-    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --stroke-bg-color: #96af8c;
 
+  --mob-menu-bg-color: #85a279;
+  --tab-menu-bg-color: #97af8d;
+
+  --line-grey-color: #e1e1e1;
+
+  // animation
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // buttons variables
+  --button-default-border-bg-color: #f8d24e;
+  --button-hover-focus-border-bg-color: #0a8817;
+  --button-disabled-border-bg-color: #ababab;
+  --button-default-text-icon-color: #131313;
+  --button-focus-text-color: #fcfcfc;
+  --button-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
