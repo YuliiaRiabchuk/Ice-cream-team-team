@@ -1,1 +1,66 @@
-<p class="test">modal-contacts__our-locations</p>
+<div class="backdrop ishidden" data-modal>
+  <div class="modal-locations">
+    <button class="modal-locations__btn" type="button" data-modal-close>
+      <svg class="modal-contacts__icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <form class="locations" name="register">
+      <strong class="locations__title">Our Locations</strong>
+      <a
+        class="locations__link link"
+        href="https://goo.gl/maps/TeHQ4kAZX17jCQueA"
+      >
+        <picture>
+          <!-- Desktop =  Tablet-->
+
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/modal-locations/map-desc@1x.webp 1x,
+              ./images/modal-locations/map-desc@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/modal-locations/map-tab-desk@1x.jpg 1x,
+              ./images/modal-locations/map-tab-desk@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <!-- Mobile -->
+          <source
+            media="(max-width: 767.5px)"
+            srcset="
+              ./images/modal-locations/map-mob@1x.webp 1x,
+              ./images/modal-locations/map-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.5px)"
+            srcset="
+              ./images/modal-locations/map-mob@1x.jpg 1x,
+              ./images/modal-locations/map-mob@2x.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="card__img"
+            src="./images/modal-locations/map-mob@1x.jpg"
+            alt="Анкети людей"
+          />
+        </picture>
+      </a>
+
+      <a
+        class="locations__btn link"
+        href="https://goo.gl/maps/TeHQ4kAZX17jCQueA"
+        >Open map</a
+      >
+    </form>
+  </div>
+</div>
