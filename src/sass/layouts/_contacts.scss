@@ -5,18 +5,9 @@
   &__item {
     padding: 40px 32px;
     border-radius: 24px;
-    // &__name {
-    //   font-family: 'Montserrat';
-    //   font-style: normal;
-    //   font-weight: 500;
-    //   font-size: 12px;
-    //   line-height: 186%;
-    //   letter-spacing: 0.04em;
 
-    //   color: var(--main-text-color);
-    //   width: 80px;
-    //   background-color: rgba(248, 210, 78, 1);
-    // }
+    background-color: rgba(252, 252, 252, 1);
+    border-radius: 24px;
   }
 }
 
@@ -42,6 +33,74 @@
   width: 130px;
 }
 
+.contact-list__location {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 8px;
+  color: rgba(19, 19, 19, 1);
+}
+
+.contact-list__location-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+
+  color: rgba(214, 147, 109, 1);
+}
+.outline {
+  border: 1px solid rgba(225, 225, 225, 1);
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.work-days {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: rgba(19, 19, 19, 1);
+}
+
+.work-time {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: rgba(171, 171, 171, 1);
+}
+
+.contact-tel {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: rgba(19, 19, 19, 1);
+}
+
+.contact-mail {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: rgba(19, 19, 19, 1);
+}
 .button {
   @extend %primary-button;
   width: 196px;
