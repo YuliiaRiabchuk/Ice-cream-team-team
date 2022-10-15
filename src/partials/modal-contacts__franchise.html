@@ -19,50 +19,48 @@
         additional information. We appreciate your patience.
       </p>
 
-      <label class="form__lable">
-        <input
-          class="form__input"
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
-        />
-      </label>
-
-      <label class="form__lable">
-        <input
-          class="form__input"
-          type="tel"
-          name="phone"
-          placeholder="Phone"
-          required
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          title="in the form xxx-xxx-xxxx"
-        />
-      </label>
-
-      <label class="form__lable">
-        <input
-          class="form__input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-        />
-      </label>
-
-      <label class="form__lable">
-        <textarea
-          class="form__textarea"
-          name="comment"
-          rows="3"
-          placeholder="Comment"
-          required
-        ></textarea>
-      </label>
+      <div class="form register__form" role="group">
+        <label class="form__lable">
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+        </label>
+        <label class="form__lable">
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            required
+            pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"
+          />
+        </label>
+        <label class="form__lable">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+          />
+        </label>
+        <label class="form__lable">
+          <textarea
+            class="form__textarea"
+            name="comment"
+            rows="3"
+            placeholder="Comment"
+            required
+          ></textarea>
+        </label>
+      </div>
 
       <button class="form__btn" type="submit">Submit</button>
     </form>
