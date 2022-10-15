@@ -1,11 +1,101 @@
-<header>
+<header class="header">
   <div class="header-container container">
-    <p class="test">header</p>
+    <a class="header-logo-link" href="">
+      <div class="header-logo-thumb">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./images/logo/logo-desc@1x.webp 1x,
+              ./images/logo/logo-desc@2x.webp 2x
+            "
+          />
+          <source
+            media="(max-width:960px)"
+            srcset="
+              ./images/logo/logo-tab-mob@1x.webp 1x,
+              ./images/logo/logo-tab-mob@2x.webp 2x
+            "
+          />
+          <img src="./images/logo/logo-desc@2x.webp" alt="brend logo" />
+        </picture>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <ul class="site-nav-list list">
+        <li class="site-nav-list__item">
+          <a href="#" class="site-nav-list__link link">Home</a>
+        </li>
+        <li class="site-nav-list__item">
+          <a href="#" class="site-nav-list__link link">How it’s made?</a>
+        </li>
+        <li class="site-nav-list__item">
+          <a href="#" class="site-nav-list__link link">Our products</a>
+        </li>
+        <li class="site-nav-list__item">
+          <a href="#" class="site-nav-list__link link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header-buttons-list list">
+      <li class="header-buttons-list__item">
+        <button
+          class="header-menu-button menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-button-menu__icon" width="32" height="32">
+            <use></use>
+          </svg>
+        </button>
+      </li>
+      <li class="header-buttons-list__item">
+        <button class="header-modal-button" type="button">
+          <span class="header-modal-button__meta">Buy now</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container__content">
+      <a class="header-burger-logo__link" href="#">
+        <div class="header-burger-logo__thumb">
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./images/logo/logo-tab-mob@1x.webp 1x,
+                ./images/logo/logo-tab-mob@2x.webp 2x
+              "
+            />
+            <img src="./images/logo/logo-tab-mob@1x.webp" alt="brend logo" />
+          </picture>
+        </div>
+      </a>
+      <button class="menu-toggle js-close-menu burger__button-close">
+        <svg width="32" height="32">
+          <use></use>
+        </svg>
+      </button>
+      <ul class="burger-menu__nav list">
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link" href="#">Home</a>
+        </li>
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link burger-menu__nav-link--black" href="#"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link" href="#">Our products</a>
+        </li>
+        <li class="burger-menu__nav-item">
+          <a class="burger-menu__nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="burger-menu__order-button">Buy now</button>
+    </div>
   </div>
 </header>
-
-<section>
-  <div class="container">
-    <p class="test">hero</p>
-  </div>
-</section>
