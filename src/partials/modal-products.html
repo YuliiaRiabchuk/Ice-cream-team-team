@@ -1,1 +1,125 @@
-<p class="test">modal-products</p>
+<div class="backdrop is-hidden">
+  <div class="modal-products">
+    <button class="modal-products__btn--close" type="button">
+      <svg class="modal-products__icon--close" width="20" height="20">
+        <use href="#"></use>
+      </svg>
+    </button>
+
+    <form class="form-products" name="form-products">
+      <h2 class="form-products__title">Chololate icecream</h2>
+
+      <div class="form-products__thumb">
+        <picture class="form-products__img">
+          <source
+            media=""
+            srcset="
+              ./images/modal/ice-chololate@1x.webp 1x,
+              ./images/modal/ice-chololate@2x.webp 2x
+            "
+          />
+          <img
+            class="form-products__photo"
+            src="./images/modal/ice-chololate@1x.webp"
+            alt="icecream"
+          />
+        </picture>
+      </div>
+
+      <ul class="features features__list list">
+        <li class="features__item">
+          <div class="features__wrapper">
+            <div class="features__wrapper--ellipse">
+              <p class="features__desc">320</p>
+            </div>
+            <span class="features__sub-desc">kcal</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__wrapper">
+            <div class="features__wrapper--ellipse">
+              <p class="features__desc">4g</p>
+            </div>
+            <span class="features__sub-desc">Prote...</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__wrapper">
+            <div class="features__wrapper--ellipse">
+              <p class="features__desc">8,2g</p>
+            </div>
+            <span class="features__sub-desc">Fats</span>
+          </div>
+        </li>
+        <li class="features__item">
+          <div class="features__wrapper">
+            <div class="features__wrapper--ellipse">
+              <p class="features__desc">40,4g</p>
+            </div>
+            <span class="features__sub-desc">Carbs</span>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="ingredients ingredients__title">Ingredients</h3>
+
+      <ul class="ingredients__list list">
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Milk<span>100ml</span></p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Belgian chocolate<span>20g</span></p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Cream<span>150 ml</span></p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Cocoa powder<span> 30g</span></p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Sugar<span>40g</span></p>
+        </li>
+        <li class="ingredients__item">
+          <p class="ingredients__desc">Vanilla sugar<span></span>10g</p>
+        </li>
+      </ul>
+
+      <div class="form-products__group" role="group">
+        <label class="form-products__field">
+          <input
+            class="form-products__input"
+            type="text"
+            name="form-products__input"
+            required
+            minlength="3"
+            placeholder="Name"
+          />
+        </label>
+
+        <label class="form-products__field">
+          <input
+            class="form-products__input"
+            type="tel"
+            name="form-products__input"
+            required
+            minlength="12"
+            maxlength="12"
+            placeholder="Phone"
+          />
+        </label>
+
+        <label class="form-products__field">
+          <textarea
+            class="form-products__message"
+            name="form-products__message"
+            rows="5"
+            minlength="4"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+
+      <button class="form-products__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
