@@ -1,5 +1,6 @@
 .contact-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   list-style: none;
@@ -15,8 +16,12 @@
     background-color: rgba(252, 252, 252, 1);
     border-radius: 24px;
   }
+}
+
+.contact-list {
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
@@ -36,6 +41,10 @@
 
   color: var(--main-text-color);
   background-color: rgba(248, 210, 78, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .contact-list__name-second {
@@ -52,6 +61,13 @@
 
   margin-bottom: 8px;
   color: rgba(19, 19, 19, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contact-list__location-link {
@@ -62,10 +78,26 @@
   line-height: 183%;
   letter-spacing: 0.04em;
   text-decoration: none;
-  width: 212px;
   display: inline-block;
-
+  width: 212px;
   color: rgba(214, 147, 109, 1);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__location-link:hover,
+  .contact-list__location-link:focus {
+    text-decoration: underline;
+  }
 }
 .outline {
   border: 1px solid rgba(225, 225, 225, 1);
@@ -82,6 +114,13 @@
   line-height: 186%;
 
   color: rgba(19, 19, 19, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .work-time {
@@ -92,6 +131,14 @@
   line-height: 186%;
 
   color: rgba(171, 171, 171, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .work-time-mod {
@@ -109,6 +156,14 @@
   text-decoration: none;
 
   display: block;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 
 .contact-mail {
@@ -121,6 +176,14 @@
   color: rgba(19, 19, 19, 1);
   text-decoration: none;
   display: block;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .button-location {
   @extend %primary-button;

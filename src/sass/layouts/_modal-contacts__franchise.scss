@@ -5,7 +5,7 @@
   z-index: 1000;
   width: 100%;
   height: 100%;
-  //   background-color: #00800033;
+  background-color: var(--bg-backdrop-color);
   transition: visibility 250ms, opacity 250ms;
 }
 
@@ -15,7 +15,7 @@
   visibility: hidden;
 }
 
-.modal-contacts {
+.modal-franchise {
   position: absolute;
   width: 88%;
   top: 50%;
@@ -35,7 +35,6 @@
   @media screen and (min-width: 768px) {
     padding: 30px 58px;
     width: 568px;
-    height: 668px;
   }
 
   &__btn {
@@ -53,6 +52,11 @@
     cursor: pointer;
     transition: fill var(--anim);
 
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+
     &:hover,
     &:focus {
       fill: var(--green-bg-color);
@@ -60,7 +64,7 @@
   }
 }
 
-.register__title {
+.franchise__title {
   display: block;
   text-align: center;
 
@@ -80,7 +84,7 @@
   }
 }
 
-.register__text {
+.franchise__text {
   display: block;
 
   margin-bottom: 22px;
@@ -98,7 +102,7 @@
   }
 }
 
-.register__form {
+.franchise__form {
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
@@ -106,7 +110,7 @@
   }
 }
 
-.form__lable {
+.franchise-form__lable {
   display: flex;
   flex-direction: column;
   transition: border-color var(--anim);
@@ -131,7 +135,7 @@
   }
 }
 
-.form__input {
+.franchise-form__input {
   width: 100%;
   height: 32px;
   margin: 0;
@@ -150,13 +154,13 @@
     padding: 10px 15px;
   }
 
-  .form__lable:focus-within &,
-  .form__lable:hover & {
+  .franchise-form__lable:focus-within &,
+  .franchise-form__lable:hover & {
     border-color: 1px solid var(--button-hover-focus-border-bg-color);
   }
 }
 
-.form__textarea {
+.franchise-form__textarea {
   font-size: 12px;
   line-height: calc(17 / 12);
   height: 64px;
@@ -178,13 +182,13 @@
     padding: 10px 15px;
   }
 
-  .form__lable:focus-within &,
-  .form__lable:hover & {
+  .franchise-form__lable:focus-within &,
+  .franchise-form__lable:hover & {
     border-color: 1px solid var(--button-hover-focus-border-bg-color);
   }
 }
 
-.form__btn {
+.franchise-form__btn {
   @extend %primary-button;
   width: 121px;
   margin: 0 auto;
