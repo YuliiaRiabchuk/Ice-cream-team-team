@@ -1,4 +1,4 @@
-.backdrop {
+.products-backdrop {
   position: fixed;
 
   top: 0;
@@ -12,14 +12,14 @@
   transition: opacity var(--anim);
 }
 
-.backdrop.is-hidden {
+.products-backdrop.is-products-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal-products {
-  transform: translate(-200%, -100%) scale(0.7) rotate(-360deg);
+.products-backdrop.is-products-hidden .modal-products {
+  transform: translate(-200%, -100%) scale(0.7);
   transition: visibility var(--anim), transform var(--anim);
 }
 
@@ -195,6 +195,10 @@
 
   &:not(:last-child) {
     margin-bottom: 11px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    transition: transform var(--anim);
   }
 }
 
