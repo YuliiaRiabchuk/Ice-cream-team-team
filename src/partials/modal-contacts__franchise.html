@@ -1,17 +1,16 @@
 <!-- <p class="test">modal-contacts__franchise</p> -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal-contacts">
-    <button class="modal-contacts__btn" type="button" data-modal-close>
-      X
-      <!-- <svg class="modal-contacts__icon" width="" height="">
-        <use href="./images/icons.svg#"></use>
-      </svg> -->
+<div class="backdrop is-hidden" franchise-data-modal>
+  <div class="modal-franchise">
+    <button class="modal-franchise__btn" type="button" franchise-modal-close>
+      <svg class="modal-franchise__icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-close-black"></use>
+      </svg>
     </button>
-    <form class="register" name="register">
-      <strong class="register__title"
+    <form class="franchise" name="register">
+      <strong class="franchise__title"
         >Thank you for your interest in owning an Ice Cream shop</strong
       >
-      <p class="register__text">
+      <p class="franchise__text">
         Due to the overwhelming volume of franchise requests we are not
         accepting new franchisee applications at this time. Once the application
         process resumes, we will contact you for further information. Please
@@ -19,10 +18,10 @@
         additional information. We appreciate your patience.
       </p>
 
-      <div class="form register__form" role="group">
-        <label class="form__lable">
+      <div class="form franchise__form" role="group">
+        <label class="franchise-form__lable">
           <input
-            class="form__input"
+            class="franchise-form__input"
             type="text"
             name="name"
             placeholder="Name"
@@ -31,9 +30,9 @@
             title="Username must be two words separated by space."
           />
         </label>
-        <label class="form__lable">
+        <label class="franchise-form__lable">
           <input
-            class="form__input"
+            class="franchise-form__input"
             type="tel"
             name="phone"
             placeholder="Phone"
@@ -41,9 +40,9 @@
             pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?"
           />
         </label>
-        <label class="form__lable">
+        <label class="franchise-form__lable">
           <input
-            class="form__input"
+            class="franchise-form__input"
             type="email"
             name="email"
             placeholder="Email"
@@ -51,9 +50,9 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
           />
         </label>
-        <label class="form__lable">
+        <label class="franchise-form__lable">
           <textarea
-            class="form__textarea"
+            class="franchise-form__textarea"
             name="comment"
             rows="3"
             placeholder="Comment"
@@ -62,7 +61,7 @@
         </label>
       </div>
 
-      <button class="form__btn" type="submit">Submit</button>
+      <button class="franchise-form__btn" type="submit">Submit</button>
     </form>
   </div>
 </div>
