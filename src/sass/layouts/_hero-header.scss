@@ -345,3 +345,8 @@
     display: none;
   }
 }
+.cafe-tucks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+}

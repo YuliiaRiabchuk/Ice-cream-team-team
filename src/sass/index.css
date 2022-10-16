@@ -648,6 +648,12 @@ body {
   }
 }
 
+.cafe-tucks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+}
+
 .products-title {
   display: flex;
   flex-direction: column;
