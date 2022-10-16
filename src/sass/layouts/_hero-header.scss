@@ -265,6 +265,7 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 40px 0px 26px 0px;
     background-image: url(../images/hero/dots-tab@1x.png);
     @media (min-resolution: 2dppx) {
       background-image: url(../images/hero/dots-tab@2x.png);
@@ -411,15 +412,19 @@
 
 .ice-horn-list__horn {
   position: absolute;
-  filter: drop-shadow(0 0 3.75rem rgba(252, 252, 252, 0.44));
+  filter: drop-shadow(0 0 5rem rgba(252, 252, 252, 0.63));
   @media screen and (max-width: 767px) {
     transform: translateX(-50%);
     left: 50%;
     top: 194px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 35px;
+    top: -9px;
     left: 55%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -3;
+    left: 635;
   }
 }
 
@@ -468,8 +473,12 @@
     left: 210px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 110px;
-    left: 66%;
+    top: 64px;
+    left: 67%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 130;
+    left: 800;
   }
 }
 .ice-horn-list__second-face {
@@ -516,8 +525,12 @@
     left: 270px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 40px;
+    top: -5px;
     left: 78%;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 0;
+    left: 950;
   }
 }
 .ice-horn-list__third-face-pic {
@@ -564,7 +577,65 @@
     left: 275px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 150px;
+    top: 110px;
     left: 80%;
   }
+  @media screen and (min-width: 1200px) {
+    top: 210;
+    left: 970;
+  }
+}
+.icecream-plate {
+  display: block;
+  position: absolute;
+  top: 140;
+  left: 32;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 268;
+    left: 16;
+  }
+}
+.icecream-meta {
+  max-width: 151px;
+  margin-top: 44px;
+  margin-left: 185px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.42;
+
+  color: var(--light-text-color);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 111px;
+    margin-left: 240px;
+    font-size: 14px;
+    line-height: 1.43;
+    max-width: 200px;
+  }
+}
+.icecream-meta__link-icon {
+  display: block;
+  margin-top: 20px;
+  fill: var(--light-text-color);
 }

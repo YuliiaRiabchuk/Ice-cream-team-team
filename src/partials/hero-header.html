@@ -27,7 +27,7 @@
           <a href="./index.html" class="site-nav-list__link link">Home</a>
         </li>
         <li class="site-nav-list__item">
-          <a href="#" class="site-nav-list__link link">How it’s made?</a>
+          <a href="#about" class="site-nav-list__link link">How it’s made?</a>
         </li>
         <li class="site-nav-list__item">
           <a href="#products" class="site-nav-list__link link">Our products</a>
@@ -86,7 +86,7 @@
         <li class="burger-menu__nav-item">
           <a
             class="burger-menu__nav-link burger-menu__nav-link--black link"
-            href="#"
+            href="#about"
             >How it’s made?</a
           >
         </li>
@@ -359,7 +359,50 @@
         </picture>
       </li>
     </ul>
-
+    <picture class="icecream-plate">
+      <!-- desk -->
+      <source
+            srcset="
+              ./images/hero/plate-desc@1x.webp 1x,
+              ./images/hero/plate-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/plate-desk@1x.png 1x,
+              ./images/hero/plate-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+      <!-- tab -->
+      <source
+            srcset="
+              ./images/hero/plate-tab@1x.webp 1x,
+              ./images/hero/plate-tab@2x.webp 2x
+            "
+            media="(max-width:1199px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/plate-tab@2x.png 1x,
+              ./images/hero/plate-tab@2x-1.png 2x
+            "
+            media="(max-width:1199px)"
+          />
+          <img src="./images/hero/plate-tab@2x.png" alt="plate of icecream">
+    </picture>
+    <p class="icecream-meta">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+      <a href="#" class="icecream-meta__link-icon">
+        <svg class="icecream-meta__icon" width="40" height="16">
+          <use href="./images/icons.svg#icon-arrow-default"></use>
+        </svg>
+      </a>
+    </p>
   </div>
 
 </section>
