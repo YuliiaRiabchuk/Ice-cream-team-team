@@ -250,13 +250,38 @@
   color: var(--main-text-color);
 }
 
-// hero
+// hero top
 .hero {
   background-color: var(--green-bg-color);
   padding: 61px 0px 239px 0px;
-  @media screen and (min-width: 1200px) {
-    padding: 45px 0px 105px 0px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/hero/dots-mob@1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/hero/dots-mob@2x.png);
+      background-size: auto 49px;
+    }
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: url(../images/hero/dots-tab@1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/hero/dots-tab@2x.png);
+      background-size: auto 67px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 45px 0px 103px 0px;
+    background-image: url(../images/hero/dots-desk@1x.png);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/hero/dots-desk@2x.png);
+      background-size: auto 384px;
+    }
+  }
+}
+.hero-container {
+  position: relative;
 }
 .hero-meta-container {
   display: flex;
@@ -345,8 +370,201 @@
     display: none;
   }
 }
-.cafe-tucks-list {
-  display: flex;
-  flex-direction: column;
-  align-items: inherit;
+
+.cafe-tucks-list__amount {
+  display: block;
+  margin-bottom: 4px;
+  text-align: right;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
+}
+
+.cafe-tucks-list__title {
+  display: block;
+  text-align: right;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--light-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+.cafe-tucks-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+// hero pictures
+
+.ice-horn-list__horn {
+  position: absolute;
+  filter: drop-shadow(0 0 3.75rem rgba(252, 252, 252, 0.44));
+  @media screen and (max-width: 767px) {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 194px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 35px;
+    left: 55%;
+  }
+}
+
+.ice-horn-list__first-face {
+  position: absolute;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: 320px) and (max-width: 324px) {
+    top: 240px;
+    left: 130px;
+  }
+  @media screen and (min-width: 325px) and (max-width: 345px) {
+    top: 240px;
+    left: 137px;
+  }
+  @media screen and (min-width: 346px) and (max-width: 360px) {
+    top: 240px;
+    left: 146px;
+  }
+  @media screen and (min-width: 361px) and (max-width: 380px) {
+    top: 240px;
+    left: 154px;
+  }
+  @media screen and (min-width: 381px) and (max-width: 400px) {
+    top: 240px;
+    left: 162px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 420px) {
+    top: 240px;
+    left: 176px;
+  }
+  @media screen and (min-width: 422px) and (max-width: 444px) {
+    top: 240px;
+    left: 186px;
+  }
+  @media screen and (min-width: 445px) and (max-width: 466px) {
+    top: 240px;
+    left: 196px;
+  }
+  @media screen and (min-width: 467px) and (max-width: 479px) {
+    top: 240px;
+    left: 200px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 240px;
+    left: 210px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 110px;
+    left: 66%;
+  }
+}
+.ice-horn-list__second-face {
+  position: absolute;
+  transform: translateX(-50%);
+  @media screen and (min-width: 320px) and (max-width: 324px) {
+    top: 200px;
+    left: 190px;
+  }
+  @media screen and (min-width: 325px) and (max-width: 345px) {
+    top: 200px;
+    left: 200px;
+  }
+  @media screen and (min-width: 346px) and (max-width: 360px) {
+    top: 200px;
+    left: 210px;
+  }
+  @media screen and (min-width: 361px) and (max-width: 380px) {
+    top: 200px;
+    left: 220px;
+  }
+  @media screen and (min-width: 381px) and (max-width: 400px) {
+    top: 200px;
+    left: 230px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 420px) {
+    top: 200px;
+    left: 240px;
+  }
+  @media screen and (min-width: 422px) and (max-width: 444px) {
+    top: 200px;
+    left: 250px;
+  }
+  @media screen and (min-width: 445px) and (max-width: 466px) {
+    top: 200px;
+    left: 260px;
+  }
+  @media screen and (min-width: 467px) and (max-width: 479px) {
+    top: 200px;
+    left: 270px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 200px;
+    left: 270px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 40px;
+    left: 78%;
+  }
+}
+.ice-horn-list__third-face-pic {
+  position: absolute;
+  transform: translateX(-50%);
+  @media screen and (min-width: 320px) and (max-width: 324px) {
+    top: 270px;
+    left: 200px;
+  }
+  @media screen and (min-width: 325px) and (max-width: 345px) {
+    top: 270px;
+    left: 208px;
+  }
+  @media screen and (min-width: 346px) and (max-width: 360px) {
+    top: 270px;
+    left: 216px;
+  }
+  @media screen and (min-width: 361px) and (max-width: 380px) {
+    top: 270px;
+    left: 224px;
+  }
+  @media screen and (min-width: 381px) and (max-width: 400px) {
+    top: 270px;
+    left: 232px;
+  }
+  @media screen and (min-width: 401px) and (max-width: 420px) {
+    top: 270px;
+    left: 240px;
+  }
+  @media screen and (min-width: 422px) and (max-width: 444px) {
+    top: 270px;
+    left: 248px;
+  }
+  @media screen and (min-width: 445px) and (max-width: 466px) {
+    top: 270px;
+    left: 256px;
+  }
+  @media screen and (min-width: 467px) and (max-width: 479px) {
+    top: 270px;
+    left: 264px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    top: 270px;
+    left: 275px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 150px;
+    left: 80%;
+  }
 }
