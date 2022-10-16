@@ -1,0 +1,125 @@
+footer {
+  background-color: rgba(132, 161, 120, 1);
+  padding-bottom: 62px;
+}
+
+.footer-title-first {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  color: rgba(252, 252, 252, 1);
+
+  width: 232px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    width: 352px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    width: 504px;
+  }
+}
+
+.footer-title-second {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: rgba(252, 252, 252, 1);
+
+  width: 200px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    width: 504px;
+  }
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+}
+
+// .footer-list__item {
+//   background-color: rgba(248, 210, 78, 1);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   width: 32px;
+//   height: 32px;
+// }
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(248, 210, 78, 1);
+}
+
+.footer-social__svg {
+  fill: rgba(132, 161, 120, 1);
+}
+
+.footer-contact {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: rgba(19, 19, 19, 1);
+  text-align: right;
+}
+
+.footer-contact-tel {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+  color: rgba(252, 252, 252, 1);
+  text-decoration: none;
+}
+
+.footer-border {
+  display: flex;
+  outline: 1px solid rgba(225, 225, 225, 1);
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.copyright {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+
+  color: rgba(122, 122, 122, 1);
+
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
