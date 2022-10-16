@@ -138,6 +138,7 @@
     visibility: visible;
     pointer-events: initial;
     opacity: 1;
+    overflow-y: scroll;
   }
   @media screen and (min-width: 1199px) {
     display: none;
@@ -247,4 +248,100 @@
 }
 .burger-menu__nav-link--black {
   color: var(--main-text-color);
+}
+
+// hero
+.hero {
+  background-color: var(--green-bg-color);
+  padding: 61px 0px 239px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 45px 0px 105px 0px;
+  }
+}
+.hero-meta-container {
+  display: flex;
+}
+.hero-meta-container__left-side {
+  max-width: 247px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 181px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 367px;
+  }
+}
+.hero-title {
+  margin-bottom: 32px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: calc(33 / 26);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    margin-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
+}
+.hero-title__span {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 96.5%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: calc(13 / 24);
+  }
+}
+
+.hero-button-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
+  }
+}
+.hero-button-list__link-products {
+  @extend %products-button;
+}
+.hero-button-list__link-about {
+  display: block;
+  outline: none;
+  padding: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-decoration-line: underline;
+  color: var(--button-default-border-bg-color);
+  transition: color 200ms var(--anim);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    padding: 15px;
+  }
+  &:hover {
+    color: var(--button-hover-focus-border-bg-color);
+  }
+  &:focus {
+    color: var(--button-focus-text-color);
+  }
+  &:disabled {
+    color: var(--button-disabled-border-bg-color);
+  }
+}
+.hero-meta-container__right-side {
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
