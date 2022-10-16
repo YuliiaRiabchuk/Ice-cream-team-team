@@ -4,40 +4,58 @@
             <p class="about__pretitle">tradition and love</p>
             <h2 class="about__title">how it's made?</h2>
         </div>
-        <div class="about__thumb">
-            <picture class="about-image">
-                <source media="(min-width: 1200px)" srcset="
-                                      ..//..//src/images/about/about-cow-desc@1x.webp  1x,
-                                      ..//..//src/images/about/about-cow-desc@2x.webp 2x
+        <div class="about-wrapper">
+            <div class="about-thumb">
+                <div class="about-shadow">
+                    <picture class="about-shadow__image">
+                        <source media="(min-width: 1200px)" srcset="
+                                      ./images/about/about-cow-desc@1x.webp  1x,
+                                      ./images/about/about-cow-desc@2x.webp 2x
                                     " type="image/webp" />
-                <!-- Tablet screen -->
-                <source media="(min-width: 768px)" srcset="
-                                      ..//..//src/images/about/about-cow-tab@1x.webp 1x,
-                                      ..//..//src/images/about/about-cow-tab@2x.webp 2x
+                        <source media="(min-width: 1200px)" srcset="
+                                                        ./images/about/about-cow-desk@1x.png  1x,
+                                                        ./images/about/about-cow-desk@2x.png 2x
+                                                      " type="image/png" />
+                        <!-- Tablet screen -->
+                        <source media="(min-width: 768px)" srcset="
+                                      ./images/about/about-cow-tab@1x.webp 1x,
+                                      ./images/about/about-cow-tab@2x.webp 2x
                                     " type="image/webp" />
-                <!-- Mobile screen -->
-                <source media="(max-width: 767px)" srcset="
-                                      ..//..//src/images/about/about-cow-mob@1x.webp 1x,
-                                     ..//..//src/images/about/about-cow-mob@2x.webp 2x
+                        <source media="(min-width: 768px)" srcset="
+                                                        ./images/about/about-cow-tab@1x.png   1x,
+                                                        ./images/about/about-cow-tab@2x.png  2x
+                                                      " type="image/png" />
+                        <!-- Mobile screen -->
+                        <source media="(max-width: 767px)" srcset="
+                                      ./images/about/about-cow-mob@1x.webp 1x,
+                                     ./images/about/about-cow-mob@2x.webp 2x
                                     " type="image/webp" />
-                <img class="about__photo" src="..//..//src/images/about/about-cow-mob@1x.webp"
-                    alt="зображення корови" width="278" height="278" loading="lazy" />
-            </picture>
-        </div>
-        <div class="about-text">
-            <p class="about-text__benefits">Ice is a place where you will become not only a little happier, but also
-                healthier.
-                Health
-                is the main value for us, and
-                we follow it when creating our handmade desserts.</p>
-            <p class="about-text__production">We use traditional recipes and 100% natural ingredients. Our products are
-                so
-                natural that they can be given to children
-                from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
-                milkshakes.</p>
-            <p class="about-text__reason">This is enough to choose ice cream and coffee for any
-                mood!</p>
-            <button class="about-text__button" type="button"></button>
+                        <source media="(max-width: 767px)" srcset="
+                                                        ./images/about/about-cow-mob@1x.png    1x,
+                                                        ./images/about/about-cow-mob@2x.png  2x
+                                                      " type="image/png" />
+                        <img class="about-shadow__photo" src="./images/about/about-cow-mob@1x.png"
+                            alt="зображення корови" width="278" height="278" loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+            <div class="about-text">
+                <p class="about-text__benefits">Ice is a place where you will become not only a little happier, but also
+                    healthier.
+                    Health
+                    is the main value for us, and
+                    we follow it when creating our handmade desserts.</p>
+                <p class="about-text__production">We use traditional recipes and 100% natural ingredients. Our products
+                    are
+                    so
+                    natural that they can be given to children
+                    from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and
+                    23
+                    milkshakes.</p>
+                <p class="about-text__reason">This is enough to choose ice cream and coffee for any
+                    mood!</p>
+                <button class="about-text__button" type="button">Read more</button>
+            </div>
         </div>
     </div>
 </section>
