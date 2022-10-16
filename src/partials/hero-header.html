@@ -27,13 +27,13 @@
           <a href="./index.html" class="site-nav-list__link link">Home</a>
         </li>
         <li class="site-nav-list__item">
-          <a href="#" class="site-nav-list__link link">How it’s made?</a>
+          <a href="#about" class="site-nav-list__link link">How it’s made?</a>
         </li>
         <li class="site-nav-list__item">
-          <a href="#" class="site-nav-list__link link">Our products</a>
+          <a href="#products" class="site-nav-list__link link">Our products</a>
         </li>
         <li class="site-nav-list__item">
-          <a href="#" class="site-nav-list__link link">Contact</a>
+          <a href="#contacts" class="site-nav-list__link link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -86,18 +86,323 @@
         <li class="burger-menu__nav-item">
           <a
             class="burger-menu__nav-link burger-menu__nav-link--black link"
-            href="#"
+            href="#about"
             >How it’s made?</a
           >
         </li>
         <li class="burger-menu__nav-item">
-          <a class="burger-menu__nav-link link" href="#">Our products</a>
+          <a class="burger-menu__nav-link link" href="#products">Our products</a>
         </li>
         <li class="burger-menu__nav-item">
-          <a class="burger-menu__nav-link link" href="#">Contact</a>
+          <a class="burger-menu__nav-link link" href="#contacts">Contact</a>
         </li>
       </ul>
       <button type="button" class="burger-menu__order-button">Buy now</button>
     </div>
   </div>
 </header>
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero-container container">
+    <div class="hero-meta-container">
+      <div class="hero-meta-container__left-side">
+        <h1 class="hero-title">
+          ice cream made with <span class="hero-title__span">passion</span>
+        </h1>
+        <ul class="hero-button-list list">
+          <li class="hero-button-list__item">
+            <a href="#products" class="hero-button-list__link-products link"
+              >Products</a
+            >
+          </li>
+          <li class="hero-button-list__item">
+            <a href="" class="hero-button-list__link-about">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-meta-container__right-side">
+        <ul class="cafe-tucks-list list">
+          <li class="cafe-tucks-list__item">
+            <p class="cafe-tucks-list__amount">
+              16
+              <p class="cafe-tucks-list__title">cafes</p>
+            </p>
+          </li>
+          <li class="cafe-tucks-list__item">
+            <p class="cafe-tucks-list__amount">
+              23
+              <p class="cafe-tucks-list__title">food trucks</p>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+
+  <!-- hero pictures -->
+  
+     <ul class="ice-horn-list list">
+      <li class="ice-horn-list__horn">
+        <picture class="ice-horn-list__horn-pic">
+          <!-- desk -->
+          <source
+            srcset="
+              ./images/hero/horn-desc@1x.webp 1x,
+              ./images/hero/horn-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/horn-desk@1x.png 1x,
+              ./images/hero/horn-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <!-- tab -->
+          <source
+            srcset="
+              ./images/hero/horn-tab@1x.webp 1x,
+              ./images/hero/horn-tab@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/horn-tab@1x.png 1x,
+              ./images/hero/horn-tab@1x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <!-- mobile -->
+          <source
+            srcset="
+              ./images/hero/horn-mob@1x.webp 1x,
+              ./images/hero/horn-mob@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/horn-mob@1x.png 1x,
+              ./images/hero/horn-mob@1x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero/horn-mob@1x.webp" alt="icecream horn">
+        </picture>
+      </li>
+      <li class="ice-horn-list__first-face">
+        <picture class="ice-horn-list__first-face-pic">
+
+          <!-- desk -->
+          <source
+            srcset="
+              ./images/hero/face1-desc@1x.webp 1x,
+              ./images/hero/face1-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face1-desk@1x.png 1x,
+              ./images/hero/face1-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <!-- tab -->
+          <source
+            srcset="
+              ./images/hero/face1-tab@1x.webp 1x,
+              ./images/hero/face1-tab@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face1-tab@1x.png 1x,
+              ./images/hero/face1-tab@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <!-- mobile -->
+          <source
+            srcset="
+              ./images/hero/face1-mob@1x.webp 1x,
+              ./images/hero/face1-mob@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face1-mob@1x.png 1x,
+              ./images/hero/face1-mob@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero/face1-mob@1x.png" alt="fece on icecream">
+        </picture>
+      </li>
+      <li class="ice-horn-list__second-face">
+        <picture class="ice-horn-list__second-face-pic">
+          
+          <!-- desk -->
+          <source
+            srcset="
+              ./images/hero/face2-desc@1x.webp 1x,
+              ./images/hero/face2-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face2-desk@1x.png 1x,
+              ./images/hero/face2-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <!-- tab -->
+          <source
+            srcset="
+              ./images/hero/face2-tab@1x.webp 1x,
+              ./images/hero/face2-tab@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face2-tab@1x.png 1x,
+              ./images/hero/face2-tab@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <!-- mobile -->
+          <source
+            srcset="
+              ./images/hero/face2-mob@1x.webp 1x,
+              ./images/hero/face2-mob@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face2-mob@1x.png 1x,
+              ./images/hero/face2-mob@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero/face2-mob@1x.webp" alt="fece on icecream">
+        </picture>
+      </li>
+      <li class="ice-horn-list__third-face">
+        <picture class="ice-horn-list__third-face-pic">
+          
+          <!-- desk -->
+          <source
+            srcset="
+              ./images/hero/face3-desc@1x.webp 1x,
+              ./images/hero/face3-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face3-desk@1x.png 1x,
+              ./images/hero/face3-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <!-- tab -->
+          <source
+            srcset="
+              ./images/hero/face3-tab@1x.webp 1x,
+              ./images/hero/face3-tab@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face3-tab@1x.png 1x,
+              ./images/hero/face3-tab@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <!-- mobile -->
+          <source
+            srcset="
+              ./images/hero/face3-mob@1x.webp 1x,
+              ./images/hero/face3-mob@2x.webp 2x
+            "
+            media="(max-width:767px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/face3-mob@1x.png 1x,
+              ./images/hero/face3-mob@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/hero/face3-mob@1x.webp" alt="fece on icecream">
+        </picture>
+      </li>
+    </ul>
+    <picture class="icecream-plate">
+      <!-- desk -->
+      <source
+            srcset="
+              ./images/hero/plate-desc@1x.webp 1x,
+              ./images/hero/plate-desc@2x.webp 2x
+            "
+            media="(min-width:1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/plate-desk@1x.png 1x,
+              ./images/hero/plate-desk@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+      <!-- tab -->
+      <source
+            srcset="
+              ./images/hero/plate-tab@1x.webp 1x,
+              ./images/hero/plate-tab@2x.webp 2x
+            "
+            media="(max-width:1199px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/hero/plate-tab@2x.png 1x,
+              ./images/hero/plate-tab@2x-1.png 2x
+            "
+            media="(max-width:1199px)"
+          />
+          <img src="./images/hero/plate-tab@2x.png" alt="plate of icecream">
+    </picture>
+    <p class="icecream-meta">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+      <a href="#" class="icecream-meta__link-icon">
+        <svg class="icecream-meta__icon" width="40" height="16">
+          <use href="./images/icons.svg#icon-arrow-default"></use>
+        </svg>
+      </a>
+    </p>
+  </div>
+
+</section>

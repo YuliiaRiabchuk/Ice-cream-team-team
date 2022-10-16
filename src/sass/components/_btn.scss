@@ -30,7 +30,7 @@
     background-color: transparent;
   }
   @media screen and (min-width: 1200px) {
-    width: 132px;
+    min-width: 132px;
     height: 42px;
     font-size: 14px;
     line-height: calc(18 / 14);
