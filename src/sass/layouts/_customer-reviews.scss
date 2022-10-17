@@ -1,0 +1,116 @@
+.section-customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../images/bacgrounds/gallery/gallery-bg-mob@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bacgrounds/gallery/gallery-bg-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/bacgrounds/gallery/gallery-bg-tab@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bacgrounds/gallery/gallery-bg-tab@1x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 1;
+  color: var(--grey-bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--green-bg-color);
+}
+
+.customers__img {
+  margin: 0 auto 30px;
+  width: 85px;
+  height: 85px;
+}
+
+.customers__comment {
+  width: 100%;
+  max-height: 256px;
+  margin-bottom: 30px;
+  padding: 34px 39px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: var(--light-text-color);
+  background: var(--green-bg-color);
+
+  @media screen and (min-width: 768px) {
+    width: 705px;
+    height: 138px;
+    padding: 29px 80px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    height: 138px;
+    padding: 39px 74px;
+    font-size: 16px;
+  }
+}
+
+.customers__name {
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+  margin-bottom: 14px;
+
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
