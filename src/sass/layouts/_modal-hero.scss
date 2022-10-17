@@ -32,13 +32,13 @@
 
   width: 280px;
   height: 80%;
-
+  overflow-y: scroll;
   background-color: var(--light-bg-color);
   border: 2px solid var(--yellow-bg-color);
   border-radius: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
+  text-align: center;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform var(--anim);
 
@@ -72,33 +72,49 @@
   font-size: 20px;
   line-height: calc(28 / 20);
   color: var(--main-text-color);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 103px;
+  }
 }
 
 .by-products-list {
-  @media screen and (min-width: 767px) {
-    display: flex;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
     gap: 32px;
+    margin-bottom: 40px;
   }
 }
 
 .by-products-list__item {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 132px;
-  height: 135px;
-  padding-top: 95px;
+  height: 140px;
+  padding-top: 100px;
   background: transparent;
   border: 2px solid var(--stroke-bg-color);
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 16px;
   text-align: center;
 
-  // &:nth-child(2) {
-  //   background: var(--light-yellow-bg-color);
-  // }
-  // &:last-child {
-  //   background: var(--ginger-text-color);
-
-  // }
+  &:nth-child(2) {
+    background: var(--light-yellow-bg-color);
+    border-color: transparent;
+  }
+  &:last-child {
+    border: 2px solid var(--ginger-text-color);
+  }
 }
 
 .by-cream-thumb {
@@ -134,4 +150,152 @@
       background-image: url(../images/modal-products/ice-cream-mob@2x.png);
     }
   }
+}
+.by-coffee-thumb {
+  position: absolute;
+  border-radius: 50%;
+  width: 132px;
+  height: 130px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  left: -2;
+  top: -31.5%;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    background-size: contain;
+    background-image: url(../images/modal-products/ice-coffee-mob@1x.png);
+    background-size: 132px 138px;
+    top: -17px;
+    left: 0;
+    width: 132px;
+    height: 138px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/modal-products/ice-coffee-mob@2x.png);
+    }
+  }
+}
+
+.by-milkshakes-thumb {
+  position: absolute;
+  border-radius: 50%;
+  width: 132px;
+  height: 130px;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+  left: -2;
+  top: -31.5%;
+  &::before {
+    content: '';
+
+    position: absolute;
+    background-size: contain;
+    background-image: url(../images/modal-products/milkshake-mob@1x.png);
+    background-size: 132px 138px;
+    top: -17px;
+    left: 0;
+    width: 132px;
+    height: 138px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/modal-products/milkshake-mob@1x.png);
+    }
+  }
+}
+.form-header__group {
+  margin-bottom: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header__field {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.form-header__input {
+  width: 240px;
+  height: 42px;
+  padding-right: 11px;
+  padding-left: 11px;
+
+  background: var(--background-input-color);
+  border: 1px solid var(--green-bg-color);
+  border-radius: 10px;
+  outline: transparent;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: var(--main-text-color);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--yellow-bg-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.form-header__message {
+  display: block;
+  resize: none;
+  width: 240px;
+  height: 84px;
+  padding: 11px;
+  outline: transparent;
+
+  background: var(--background-input-color);
+  border: 1px solid var(--green-bg-color);
+  border-radius: 10px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: var(--main-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    padding: 11px 16px;
+  }
+}
+
+.form-header__btn {
+  @extend %primary-button;
+
+  padding: 12px 34px;
+  margin-right: auto;
+  margin-left: auto;
 }
