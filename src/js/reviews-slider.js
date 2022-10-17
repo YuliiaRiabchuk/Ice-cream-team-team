@@ -1,7 +1,7 @@
-$('.one-time').slick({
+$('.single-item-rtl').slick({
+  // autoplaySpeed: 7000,
+  // autoplay: true,
   dots: true,
-  infinite: true,
-  speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  // slidesToScroll: 1,
 });
