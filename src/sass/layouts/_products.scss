@@ -33,21 +33,20 @@
     max-width: 320px;
     background-image: url(../images/bacgrounds/products/products-bg1-mob@1x.jpg),
       url(../images/bacgrounds/products/products-bg2-mob@1x.jpg),
-      url(../images/bacgrounds/products/products-bg2-mob@1x.jpg);
+      url(../images/bacgrounds/products/products-bg3-mob@1x.jpg);
+    background-size: 320px 700px, contain, contain;
+    background-position: top, 0px 700px, 0px 1276px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     margin: 0 auto;
-    background-size: cover cover cover;
-    background-repeat: no-repeat no-repeat no-repeat;
-    background-clip: content-box content-box content-box;
   }
 
   @media screen and (max-width: 767px),
     screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/bacgrounds/products/products-bg1-mob@2x.jpg)
-        no-repeat,
-      url(../images/bacgrounds/products/products-bg2-mob@2x.jpg) no-repeat,
-      url(../images/bacgrounds/products/products-bg2-mob@2x.jpg) no-repeat;
+    background-image: url(../images/bacgrounds/products/products-bg1-mob@2x.jpg),
+      url(../images/bacgrounds/products/products-bg2-mob@2x.jpg),
+      url(../images/bacgrounds/products/products-bg3-mob@2x.jpg);
   }
 }
 
