@@ -1,4 +1,19 @@
 .section-products {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 852px;
+    background-image: url(../images/bacgrounds/products/products-bg-tab@1x.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+  }
+  @media screen and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/bacgrounds/products/products-bg-tab@2x.jpg);
+  }
+
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     height: 1050px;
@@ -13,20 +28,29 @@
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/bacgrounds/products/products-bg-desc@2x.jpg);
   }
-}
-
-.headline-thumb {
-  text-align: center;
-  margin-bottom: 303px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 148px;
+    max-width: 320px;
+    background-image: url(../images/bacgrounds/products/products-bg1-mob@1x.jpg),
+      url(../images/bacgrounds/products/products-bg2-mob@1x.jpg),
+      url(../images/bacgrounds/products/products-bg3-mob@1x.jpg);
+    background-size: 320px 700px, contain, contain;
+    background-position: top, 0px 700px, 0px 1276px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/bacgrounds/products/products-bg1-mob@2x.jpg),
+      url(../images/bacgrounds/products/products-bg2-mob@2x.jpg),
+      url(../images/bacgrounds/products/products-bg3-mob@2x.jpg);
   }
 }
 
-.headline-thumb__text {
-  display: inline-block;
-  margin-top: 60px;
+.products-text {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 800;
@@ -34,6 +58,7 @@
   line-height: calc(22 / 18);
   text-transform: uppercase;
   color: var(--main-text-color);
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -47,7 +72,7 @@
   }
 }
 
-.headline-thumb__title {
+.products-title {
   font-family: var(--title-font);
   font-style: normal;
   font-weight: 400;
@@ -58,15 +83,20 @@
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-top: 12px;
+  margin-bottom: 148px;
   @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: calc(43 / 34);
+    margin-bottom: 200px;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: calc(45 / 36);
     letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 303px;
   }
 }
 
@@ -134,13 +164,8 @@
     ),
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-  left: 9.5%;
-  top: -31.5%;
-
-  @media screen and (max-width: 767px) {
-    left: 14%;
-    top: -22%;
-  }
+  left: 14%;
+  top: -22%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     left: 3.5%;
@@ -152,6 +177,8 @@
   @media screen and (min-width: 1200px) {
     width: 301px;
     height: 300px;
+    left: 9.5%;
+    top: -31.5%;
   }
 
   &::before {
@@ -218,13 +245,9 @@
     ),
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  left: 9.5%;
-  top: -31.5%;
 
-  @media screen and (max-width: 767px) {
-    left: 14%;
-    top: -22%;
-  }
+  left: 14%;
+  top: -22%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     left: 3.5%;
@@ -236,6 +259,8 @@
   @media screen and (min-width: 1200px) {
     width: 301px;
     height: 300px;
+    left: 9.5%;
+    top: -31.5%;
   }
 
   &::before {
@@ -301,24 +326,21 @@
     ),
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-  left: 9.5%;
-  top: -31.5%;
-
-  @media screen and (max-width: 767px) {
-    left: 14%;
-    top: -22%;
-    width: 199px;
-    height: 197px;
-  }
+  left: 14%;
+  top: -22%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     left: 3.5%;
     top: -25%;
+    width: 199px;
+    height: 197px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 301px;
     height: 300px;
+    left: 9.5%;
+    top: -31.5%;
   }
 
   &::before {
@@ -331,12 +353,8 @@
     width: 200px;
     height: 200px;
 
-    @media screen and (max-width: 767px) {
-      top: -15px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      top: -8px;
+    @media screen and (max-width: 1199px) {
+      top: -11px;
     }
 
     @media screen and (max-width: 767px),
