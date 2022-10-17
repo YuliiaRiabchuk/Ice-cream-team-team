@@ -166,6 +166,11 @@
   }
 }
 
+.contact-tel:hover,
+.contact-tel:focus {
+  color: rgba(214, 147, 109, 1);
+}
+
 .contact-mail {
   font-family: 'Montserrat';
   font-style: normal;
@@ -184,6 +189,11 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: rgba(214, 147, 109, 1);
 }
 .button-location {
   @extend %primary-button;
