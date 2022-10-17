@@ -6,11 +6,11 @@
   };
 
   refs.openModalBtns.forEach(element =>
-    element.addEventListener('click', toggleModalByNow)
+    element.addEventListener('click', toggleModalHeader)
   );
-  refs.closeModalBtn.addEventListener('click', toggleModalByNow);
+  refs.closeModalBtn.addEventListener('click', toggleModalHeader);
 
-  function toggleModalProducts() {
-    refs.modal.classList.toggle('is-products-hidden');
+  function toggleModalHeader() {
+    refs.modal.classList.toggle('is-header-hidden');
   }
 })();
