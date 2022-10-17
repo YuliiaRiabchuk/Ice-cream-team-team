@@ -1,1 +1,74 @@
-<p class="test">modal-hero</p>
+<div class="header-form__backdrop is-header-hidden" data-modal-header>
+  <div class="modal-header">
+    <button
+      class="modal-header__btn-close"
+      type="button"
+      data-modal-header-close
+    >
+      <svg class="modal-header__icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-close-black"></use>
+      </svg>
+    </button>
+
+    <h2 class="modal-header__title">Buy now</h2>
+
+    <ul class="by-products-list list">
+      <li class="by-products-list__item">
+        <div class="by-cream-thumb"></div>
+        <div class="by-decor-thumb">
+          <h3 class="by-products-list__title">ice cream</h3>
+        </div>
+      </li>
+      <li class="by-products-list__item">
+        <div class="by-coffee-thumb"></div>
+        <div class="by-decor-thumb">
+          <h3 class="by-products-list__title">ice coffee</h3>
+        </div>
+      </li>
+      <li class="by-products-list__item">
+        <div class="by-milkshakes-thumb"></div>
+        <div class="by-decor-thumb">
+          <h3 class="by-products-list__title">icecream</h3>
+        </div>
+      </li>
+    </ul>
+    <form class="form-header" name="form-header">
+      <div class="form-header__group" role="group">
+        <label class="form-header__field">
+          <input
+            class="form-header__input"
+            type="text"
+            name="form-header__input"
+            required
+            minlength="3"
+            placeholder="Name"
+          />
+        </label>
+
+        <label class="form-header__field">
+          <input
+            class="form-header__input"
+            type="tel"
+            name="form-header__input"
+            required
+            minlength="12"
+            maxlength="12"
+            placeholder="Phone"
+          />
+        </label>
+
+        <label class="form-header__field">
+          <textarea
+            class="form-header__message"
+            name="form-header__message"
+            rows="5"
+            minlength="4"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+
+      <button class="form-header__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
