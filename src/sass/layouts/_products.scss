@@ -1,4 +1,9 @@
 .section-products {
+  background-image: url(../images/bacgrounds/products/products-bg-desc@1x.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: cover;
+
   @media screen and (min-width: 768px) {
     max-width: 768px;
     height: 852px;
@@ -29,7 +34,7 @@
     background-image: url(../images/bacgrounds/products/products-bg-desc@2x.jpg);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 320px) {
     max-width: 320px;
     background-image: url(../images/bacgrounds/products/products-bg1-mob@1x.jpg),
       url(../images/bacgrounds/products/products-bg2-mob@1x.jpg),
@@ -40,7 +45,7 @@
     margin: 0 auto;
   }
 
-  @media screen and (max-width: 767px),
+  @media screen and (max-width: 320px),
     screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
