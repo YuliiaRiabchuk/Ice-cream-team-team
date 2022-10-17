@@ -74,9 +74,10 @@ text-align: center;
 color:var(--main-text-color);
 margin-bottom: 20px;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   font-size: 20px;
   line-height: 28px;
+  margin-bottom: 32px;
     }
 
 }
@@ -108,6 +109,7 @@ width: 450px;
 
 @media screen and (min-width: 768px) {
  width: 528px;
+ margin-bottom: 32px;
   }
 }
 
