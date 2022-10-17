@@ -35,7 +35,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 300px;
+  // min-width: 480px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -46,13 +46,19 @@
   border: 2px solid var(--yellow-bg-color);
   border-radius: 10px;
 
-  @media screen and (min-width: 480px) {
-   min-width: 480px;
-  }
 
-  @media screen and (min-width: 1199px) {
-    min-width: 528px;
-  }
+  @media screen and (min-width: 768px) {
+    width: 528px;
+   }
+
+
+  // @media screen and (min-width: 768px) {
+  //  min-width: 480px;
+  // }
+
+  // @media screen and (min-width: 1199px) {
+  //  width: 528px;
+  // }
 }
 
 .container-modal{
@@ -108,7 +114,7 @@ width: 450px;
 }
 
 @media screen and (min-width: 768px) {
- width: 528px;
+ width: 100%;
  margin-bottom: 32px;
   }
 }
