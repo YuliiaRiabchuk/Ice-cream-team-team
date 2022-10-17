@@ -1,5 +1,13 @@
-.about.section {
+.about {
   background-color: var(--green-bg-color);
+  padding-top: 60px;
+  padding-bottom: 42px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
 }
 .about__pretitle {
   font-weight: 700;
@@ -56,13 +64,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 48px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
   }
 }
-.about-shadow__photo {
+.about-shadow__image {
   position: relative;
   top: 21px;
   margin: 0 auto;
@@ -78,9 +82,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
+  // margin-right: 30px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 100px;
@@ -100,6 +105,11 @@
     width: 500px;
     height: 529px;
   }
+}
+.about-text__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .about-text {
   text-align: center;
@@ -126,12 +136,16 @@
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: var(--light-text-color);
-  margin-bottom: 4px;
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+  }
+}
+.about-text__first {
+  margin-bottom: 4px;
+  @media screen and (min-width: 1200px) {
     margin-bottom: 8px;
   }
 }
@@ -141,10 +155,15 @@
   font-size: 12px;
   line-height: 1.58;
   color: var(--light-text-color);
-  margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.92;
+  }
+}
+.about-text__second {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
   }
 }
 .about-text__reason {
@@ -157,12 +176,14 @@
     line-height: 1.91;
     letter-spacing: 0.04em;
     color: var(--light-text-color);
-    margin-bottom: 48px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.92;
   }
+}
+.about-text__third {
+  margin-bottom: 48px;
 }
 .about-text__button {
   @extend %primary-button;
