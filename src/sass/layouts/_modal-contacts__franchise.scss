@@ -35,6 +35,14 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--anim), scale var(--anim);
 
+  @media screen and (min-width: 321px) and (max-width: 479.5px) {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
     padding: 30px 58px;
     width: 568px;
