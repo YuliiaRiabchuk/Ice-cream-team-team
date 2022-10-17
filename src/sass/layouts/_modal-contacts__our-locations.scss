@@ -13,14 +13,16 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
+  .modal-locations {
+    transform: translate(-50%, -50%) scale(1.2);
+    transition: transform var(--anim), scale var(--anim);
+  }
 }
 
 .modal-locations {
   position: absolute;
-  width: 88%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 280px;
   z-index: 1000;
   padding: 26px;
   background-color: var(--modal-background-color);
@@ -28,10 +30,10 @@
   border: 2px solid var(--yellow-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-
-  @media screen and (min-width: 480px) {
-    width: 300px;
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--anim), scale var(--anim);
 
   @media screen and (min-width: 768px) {
     padding: 30px 58px;
