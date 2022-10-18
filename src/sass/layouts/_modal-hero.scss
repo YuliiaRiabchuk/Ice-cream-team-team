@@ -12,13 +12,13 @@
   transition: opacity var(--anim);
 }
 
-.header-form__backdrop.is-header-hidden {
+.header-form__backdrop.is-hidden.is-header-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.header-form__backdrop.is-header-hidden .modal-header {
+.header-form__backdrop.is-header-hidden.is-hidden .modal-header {
   transform: translate(-200%, -100%) scale(0.7);
   transition: visibility var(--anim), transform var(--anim);
 }
