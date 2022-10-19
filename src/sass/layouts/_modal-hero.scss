@@ -122,6 +122,7 @@
   border-radius: 50%;
   width: 132px;
   height: 130px;
+  cursor: pointer;
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -196,6 +197,7 @@
   border-radius: 50%;
   width: 132px;
   height: 130px;
+  cursor: pointer;
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -259,6 +261,7 @@
   border-radius: 50%;
   width: 132px;
   height: 130px;
+  cursor: pointer;
   background: linear-gradient(
       0deg,
       rgba(213, 117, 63, 0.7),
@@ -324,6 +327,7 @@
 
 .form-header__field {
   display: block;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -331,7 +335,6 @@
 }
 
 .form-header__input-name {
-  position: relative;
   width: 240px;
   height: 42px;
   padding-right: 11px;
@@ -374,24 +377,12 @@
   transform: translateY(-50%);
   display: block;
   @media screen and (max-width: 767px) {
-    top: 102%;
-    left: 220;
-  }
-  @media screen and (min-width: 768px) and (max-width: 834px) {
     top: 50%;
-    right: 105px;
+    left: 200;
   }
-  @media screen and (min-width: 835px) and (max-width: 1199px) {
-    top: 49%;
-    right: 105px;
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1268px) {
+  @media screen and (min-width: 768px) {
     top: 50%;
-    right: 105px;
-  }
-  @media screen and (min-width: 1269px) {
-    top: 49%;
-    right: 105px;
+    right: 15px;
   }
 }
 
@@ -461,24 +452,12 @@
   transform: translateY(-50%);
   display: block;
   @media screen and (max-width: 767px) {
-    top: 110%;
-    left: 220;
+    top: 50%;
+    left: 200;
   }
-  @media screen and (min-width: 768px) and (max-width: 834px) {
+  @media screen and (min-width: 768px) {
     top: 58%;
-    right: 105px;
-  }
-  @media screen and (min-width: 835px) and (max-width: 1199px) {
-    top: 57%;
-    right: 105px;
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1268px) {
-    top: 58%;
-    right: 105px;
-  }
-  @media screen and (min-width: 1269px) {
-    top: 57%;
-    right: 105px;
+    right: 15px;
   }
 }
 
