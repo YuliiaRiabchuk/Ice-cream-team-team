@@ -11,50 +11,98 @@
     </button>
 
     <h2 class="modal-header__title">Buy now</h2>
-
-    <ul class="by-products-list list">
-      <li class="by-products-list__item">
-        <div class="by-cream-thumb"></div>
-        <div class="by-decor-thumb">
-          <h3 class="by-products-list__title">ice cream</h3>
-        </div>
-      </li>
-      <li class="by-products-list__item">
-        <div class="by-coffee-thumb"></div>
-        <div class="by-decor-thumb">
-          <h3 class="by-products-list__title">ice coffee</h3>
-        </div>
-      </li>
-      <li class="by-products-list__item">
-        <div class="by-milkshakes-thumb"></div>
-        <div class="by-decor-thumb">
-          <h3 class="by-products-list__title">icecream</h3>
-        </div>
-      </li>
-    </ul>
     <form class="form-header" name="form-header">
+      <ul class="by-products-list list">
+        <li class="by-products-list__item">
+          <label class="by-cream-thumb">
+            <input
+              class="by-cream-thumb__checkbox"
+              type="checkbox"
+              name="product"
+              value="ice-cream"
+            />
+            <span class="by-cream-thumb__checkbox-title-thumb">
+              <span class="by-thumb__checkbox-title">ice cream</span>
+            </span>
+          </label>
+        </li>
+        <li class="by-products-list__item">
+          <label class="by-coffee-thumb">
+            <input
+              class="by-coffee-thumb__checkbox"
+              type="checkbox"
+              name="product"
+              value="ice-coffee"
+            />
+            <span class="by-coffee-thumb__checkbox-title-thumb">
+              <span class="by-thumb__checkbox-title">ice coffee</span>
+            </span>
+          </label>
+        </li>
+        <li class="by-products-list__item">
+          <label class="by-milkshakes-thumb">
+            <input
+              class="by-milkshakes__checkbox"
+              type="checkbox"
+              name="product"
+              value="milkshakes"
+            />
+            <span class="by-milkshakes__checkbox-title-thumb">
+              <span class="by-thumb__checkbox-title">milkshakes</span>
+            </span>
+          </label>
+        </li>
+      </ul>
       <div class="form-header__group" role="group">
         <label class="form-header__field">
           <input
-            class="form-header__input"
+            class="form-header__input-name"
             type="text"
-            name="form-header__input"
+            name="form-header__input-name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words in eanglish, separated by space."
             required
-            minlength="3"
+            minlength="8"
             placeholder="Name"
           />
+          <svg
+            class="form-header__notification-icon-name"
+            width="22"
+            height="22"
+          >
+            <use
+              class="warning-name"
+              href="./images/icons.svg#icon-warning"
+            ></use>
+            <use
+              class="success-name"
+              href="./images/icons.svg#icon-success"
+            ></use>
+          </svg>
         </label>
 
         <label class="form-header__field">
           <input
-            class="form-header__input"
+            class="form-header__input-tell"
             type="tel"
-            name="form-header__input"
+            name="form-header__input-tell"
             required
-            minlength="12"
-            maxlength="12"
+            pattern="^(?=.*\d)(?!.*\s).*$"
+            title="Please include only numbers and signs"
+            minlength="13"
+            maxlength="13"
             placeholder="Phone"
           />
+          <svg class="form-header__notification-tell" width="22" height="22">
+            <use
+              class="warning-tell"
+              href="./images/icons.svg#icon-warning"
+            ></use>
+            <use
+              class="success-tell"
+              href="./images/icons.svg#icon-success"
+            ></use>
+          </svg>
         </label>
 
         <label class="form-header__field">

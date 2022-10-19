@@ -1,6 +1,7 @@
 .section-customers {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 472px;
+
   background-image: url(../images/bacgrounds/gallery/gallery-bg-mob@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
@@ -20,6 +21,7 @@
   }
 
   @media screen and (min-width: 769px) {
+    padding-bottom: 383px;
     background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -27,6 +29,10 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
     }
+  }
+
+  @media screen and (min-width: 1199px) {
+    padding-bottom: 206px;
   }
 }
 
