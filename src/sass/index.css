@@ -725,6 +725,8 @@ body {
 .ice-horn-list__horn {
   position: absolute;
   filter: drop-shadow(0 0 5rem rgba(252, 252, 252, 0.63));
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 @media screen and (max-width: 767px) {
   .ice-horn-list__horn {
@@ -749,8 +751,8 @@ body {
 .ice-horn-list__first-face {
   position: absolute;
   transform: translateX(-50%);
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 @media screen and (min-width: 320px) and (max-width: 324px) {
   .ice-horn-list__first-face {
@@ -782,7 +784,7 @@ body {
     left: 133px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 420px) {
+@media screen and (min-width: 401px) and (max-width: 421px) {
   .ice-horn-list__first-face {
     top: 240px;
     left: 142px;
@@ -828,8 +830,8 @@ body {
 .ice-horn-list__second-face {
   position: absolute;
   transform: translateX(-50%);
-  -webkit-animation-delay: 340ms;
-          animation-delay: 340ms;
+  -webkit-animation-delay: 540ms;
+          animation-delay: 540ms;
 }
 @media screen and (min-width: 320px) and (max-width: 324px) {
   .ice-horn-list__second-face {
@@ -861,7 +863,7 @@ body {
     left: 186px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 420px) {
+@media screen and (min-width: 401px) and (max-width: 421px) {
   .ice-horn-list__second-face {
     top: 200px;
     left: 195px;
@@ -907,8 +909,8 @@ body {
 .ice-horn-list__third-face {
   position: absolute;
   transform: translateX(-50%);
-  -webkit-animation-delay: 390ms;
-          animation-delay: 390ms;
+  -webkit-animation-delay: 590ms;
+          animation-delay: 590ms;
 }
 @media screen and (min-width: 320px) and (max-width: 324px) {
   .ice-horn-list__third-face {
@@ -940,7 +942,7 @@ body {
     left: 194px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 420px) {
+@media screen and (min-width: 401px) and (max-width: 421px) {
   .ice-horn-list__third-face {
     top: 270px;
     left: 213px;
@@ -1057,55 +1059,42 @@ body {
   fill: var(--light-text-color);
 }
 
-.section-products {
-  background-image: url(../images/bacgrounds/products/products-bg-desc@1x.jpg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-size: cover;
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .section-products {
-    max-width: 768px;
-    height: 852px;
-    background-image: url(../images/bacgrounds/products/products-bg-tab@1x.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../images/bacgrounds/bg-mb@x1.jpg);
     margin: 0 auto;
-    background-size: cover;
+    background-size: 480px 650px;
   }
 }
-@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .section-products {
-    background-image: url(../images/bacgrounds/products/products-bg-tab@2x.jpg);
+    background-image: url(../images/bacgrounds/bg-mb@x2.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-products {
+    height: 852px;
+    background-image: url(../images/bacgrounds/bg-tab@1x.jpg);
+    margin: 0 auto;
+    background-size: 768px 860px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .section-products {
+    background-image: url(../images/bacgrounds/bg-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .section-products {
-    max-width: 1200px;
     height: 1050px;
-    background-image: url(../images/bacgrounds/products/products-bg-desc@1x.jpg);
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .section-products {
-    background-image: url(../images/bacgrounds/products/products-bg-desc@2x.jpg);
-  }
-}
-@media screen and (max-width: 320px) {
-  .section-products {
-    max-width: 320px;
-    background-image: url(../images/bacgrounds/products/products-bg1-mob@1x.jpg), url(../images/bacgrounds/products/products-bg2-mob@1x.jpg), url(../images/bacgrounds/products/products-bg3-mob@1x.jpg);
-    background-size: 320px 700px, contain, contain;
-    background-position: top, 0px 700px, 0px 1276px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 1200px 1050px;
+    background-image: url(../images/bacgrounds/bg-ds@x1.jpg);
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 320px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-products {
-    background-image: url(../images/bacgrounds/products/products-bg1-mob@2x.jpg), url(../images/bacgrounds/products/products-bg2-mob@2x.jpg), url(../images/bacgrounds/products/products-bg3-mob@2x.jpg);
+    background-image: url(../images/bacgrounds/bg-ds@x2.jpg);
   }
 }
 
@@ -2112,10 +2101,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .advantages__text {
+    width: 270px;
     font-size: 16px;
     line-height: 1.75;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
