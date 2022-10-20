@@ -1,57 +1,40 @@
 .section-products {
-  background-image: url(../images/bacgrounds/products/products-bg-desc@1x.jpg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  background-size: cover;
-
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    height: 852px;
-    background-image: url(../images/bacgrounds/products/products-bg-tab@1x.jpg);
-    background-repeat: no-repeat;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    background-image: url(../images/bacgrounds/bg-mb@x1.jpg);
     margin: 0 auto;
-    background-size: cover;
+    background-size: 480px 650px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bacgrounds/bg-mb@x2.jpg);
+    }
   }
-  @media screen and (min-width: 768px),
-    screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/bacgrounds/products/products-bg-tab@2x.jpg);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 852px;
+    background-image: url(../images/bacgrounds/bg-tab@1x.jpg);
+    margin: 0 auto;
+    background-size: 768px 860px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bacgrounds/bg-tab@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     height: 1050px;
-    background-image: url(../images/bacgrounds/products/products-bg-desc@1x.jpg);
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-size: cover;
-  }
-  @media screen and (min-width: 1200px),
-    screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/bacgrounds/products/products-bg-desc@2x.jpg);
-  }
+    background-size: 1200px 1050px;
 
-  @media screen and (max-width: 320px) {
-    max-width: 320px;
-    background-image: url(../images/bacgrounds/products/products-bg1-mob@1x.jpg),
-      url(../images/bacgrounds/products/products-bg2-mob@1x.jpg),
-      url(../images/bacgrounds/products/products-bg3-mob@1x.jpg);
-    background-size: 320px 700px, contain, contain;
-    background-position: top, 0px 700px, 0px 1276px;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-image: url(../images/bacgrounds/bg-ds@x1.jpg);
     margin: 0 auto;
-  }
 
-  @media screen and (max-width: 320px),
-    screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/bacgrounds/products/products-bg1-mob@2x.jpg),
-      url(../images/bacgrounds/products/products-bg2-mob@2x.jpg),
-      url(../images/bacgrounds/products/products-bg3-mob@2x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bacgrounds/bg-ds@x2.jpg);
+    }
   }
 }
 
