@@ -562,22 +562,22 @@
 
 .scroll-btn {
   position: fixed;
-  bottom: 1%;
-  right: 1%;
+  bottom: 2%;
+  right: 1.5%;
   border: none;
-  width: 90px;
-  height: 90px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   margin: 0;
   transform: rotate(180deg);
   background-color: inherit;
   cursor: pointer;
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+  z-index: 1000;
+  fill: var(--yellow-bg-color);
 }
 
-.scroll-btn__icon {
-  width: 90px;
-  height: 90px;
+.scroll-btn__icon-arrow {
+  transform: rotate(90deg);
+  width: 50px;
+  height: 50px;
 }
