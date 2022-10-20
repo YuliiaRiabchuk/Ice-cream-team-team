@@ -131,14 +131,12 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
   transition: opacity 250ms var(--anim), visibility 250ms var(--anim);
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  &.is-open {
-    visibility: visible;
-    pointer-events: initial;
-    opacity: 1;
-    overflow-y: scroll;
+  opacity: 1;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
   }
   @media screen and (min-width: 1199px) {
     display: none;
@@ -152,12 +150,12 @@
   padding: 80px 40px;
   margin-left: auto;
   background-color: var(--mob-menu-bg-color);
-  transform: translateX(100%);
+  transform: translateX(0%);
   transition: transform 250ms var(--anim), box-shadow 200ms var(--anim);
   transition-delay: 250ms;
-  .menu-container.is-open & {
-    transform: translateX(0%);
-    box-shadow: 14px -13px 74px 26px rgba(207, 232, 209, 0.69);
+  box-shadow: 14px -13px 74px 26px rgba(207, 232, 209, 0.69);
+  .menu-container.is-hidden & {
+    transform: translateX(100%);
   }
   @media screen and (min-width: 768px) {
     width: 75%;
@@ -171,12 +169,12 @@
   position: absolute;
   top: 2%;
   left: 5%;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 250ms var(--anim);
   transition-delay: 500ms;
   transform: scale(1.3);
-  .menu-container.is-open & {
-    opacity: 1;
+  .menu-container.is-hidden & {
+    opacity: 0;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -199,11 +197,11 @@
   transition: fill 200ms var(--anim), outline 200ms var(--anim);
   cursor: pointer;
   fill: var(--button-focus-text-color);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 250ms var(--anim);
   transition-delay: 500ms;
-  .menu-container.is-open & {
-    opacity: 1;
+  .menu-container.is-hidden & {
+    opacity: 0;
   }
   &:hover {
     fill: var(--button-default-border-bg-color);
@@ -243,11 +241,8 @@
   transition: color 200ms var(--anim);
   &:hover,
   &:focus {
-    color: var(--button-hover-focus-border-bg-color);
+    color: var(--main-text-color);
   }
-}
-.burger-menu__nav-link--black {
-  color: var(--main-text-color);
 }
 
 // hero top
@@ -416,14 +411,14 @@
   @media screen and (max-width: 767px) {
     transform: translateX(-50%);
     left: 50%;
-    top: 194px;
+    top: 195px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: -9px;
+    top: -8px;
     left: 55%;
   }
   @media screen and (min-width: 1200px) {
-    top: -3;
+    top: -2;
     left: 635;
   }
 }
