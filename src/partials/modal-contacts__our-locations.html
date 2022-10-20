@@ -11,57 +11,17 @@
     </button>
     <form class="locations" name="locations">
       <strong class="locations__title">Our Locations</strong>
-      <a
-        class="locations__link link"
-        href="https://goo.gl/maps/TeHQ4kAZX17jCQueA"
-        aria-label="map"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <picture>
-          <!-- Desktop =  Tablet-->
 
-          <!-- Tablet -->
-          <source
-            media="(min-width: 321px)"
-            srcset="
-              ./images/modal-locations/map-desc@1x.webp 1x,
-              ./images/modal-locations/map-desc@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 321px)"
-            srcset="
-              ./images/modal-locations/map-tab-desk@1x.jpg 1x,
-              ./images/modal-locations/map-tab-desk@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <!-- Mobile -->
-          <source
-            media="(max-width: 320px)"
-            srcset="
-              ./images/modal-locations/map-mob@1x.webp 1x,
-              ./images/modal-locations/map-mob@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 320px)"
-            srcset="
-              ./images/modal-locations/map-mob@1x.jpg 1x,
-              ./images/modal-locations/map-mob@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
-          <img
-            class="locations__img"
-            src="./images/modal-locations/map-mob@1x.jpg"
-            alt="location on the map"
-          />
-        </picture>
-      </a>
+      <iframe
+        class="locations__map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82742.82352538386!2d34.4999037!3d49.603157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1suk!2sua!4v1666289950396!5m2!1suk!2sua"
+        width="224"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
 
       <a
         class="locations__btn link"
