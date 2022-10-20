@@ -1,38 +1,40 @@
 .section-customers {
-  padding-top: 60px;
-  padding-bottom: 472px;
+  padding-top: 186px;
+  padding-bottom: 395px;
 
-  background-image: url(../images/bacgrounds/gallery/gallery-bg-mob@1x.jpg);
+  background-image: url(../images/bacgrounds/bg-mb@x1.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/bacgrounds/gallery/gallery-bg-mob@2x.jpg);
+    background-image: url(../images/bacgrounds/bg-mb@x2.jpg);
   }
 
   @media screen and (min-width: 481px) {
-    background-image: url(../images/bacgrounds/gallery/gallery-bg-tab@1x.jpg);
+    background-image: url(../images/bacgrounds/bg-tab@1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bacgrounds/gallery/gallery-bg-tab@1x.jpg);
+      background-image: url(../images/bacgrounds/bg-tab@2x.jpg);
     }
   }
 
   @media screen and (min-width: 769px) {
     padding-bottom: 383px;
-    background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
+    padding-top: 223px;
+    background-image: url(../images/bacgrounds/bg-ds@x1.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/bacgrounds/gallery/gallery-bg-desc@1x.jpg);
+      background-image: url(../images/bacgrounds/bg-ds@x2.jpg);
     }
   }
 
   @media screen and (min-width: 1199px) {
     padding-bottom: 206px;
+    padding-top: 456px;
   }
 }
 
@@ -46,6 +48,13 @@
   margin: 0;
   list-style: none;
   text-align: center;
+}
+
+.slick-next,
+.slick-arrow {
+  opacity: 0;
+  cursor: none;
+  display: none;
 }
 
 .slick-dots li button:before {
