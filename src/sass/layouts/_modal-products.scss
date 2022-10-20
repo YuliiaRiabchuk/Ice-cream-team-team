@@ -31,8 +31,8 @@
   padding: 28px 20px 32px 20px;
 
   width: 280px;
-  overflow-y: scroll;
-  height: 99%;
+  // overflow-y: scroll;
+  height: 95%;
 
   background-color: var(--light-bg-color);
   border: 2px solid var(--yellow-bg-color);
@@ -47,6 +47,17 @@
     width: 568px;
     padding: 32px 40px 32px 40px;
   }
+}
+
+.modal-products.scroll {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .modal-products__btn--close {
@@ -94,12 +105,12 @@
     box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
   }
   .iceCoffeeModalStyle & {
-    background-color: #efd478;
+    background-color: var(--light-yellow-bg-color);
     box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.25);
   }
 
   .milkshakeModalStyle & {
-    background-color: #d6936d;
+    background-color: var(--ginger-bg-color);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
   }
 }
@@ -140,11 +151,11 @@
   }
 
   .iceCoffeeModalStyle & {
-    border: 2px solid #efd478;
+    border: 2px solid var(--light-yellow-bg-color);
   }
 
   .milkshakeModalStyle & {
-    border: 2px solid #d6936d;
+    border: 2px solid var(--ginger-bg-color);
   }
 }
 
@@ -166,19 +177,19 @@
 
   .iceCreamModalStyle & {
     background: var(--chololate-btn-color);
-    border: 2px solid #9cbe8f;
+    border: 2px solid var(--chololate-btn-color);
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   }
 
   .iceCoffeeModalStyle & {
-    background: #efd478;
-    border: 2px solid #efd478;
+    background: var(--light-yellow-bg-color);
+    border: 2px solid var(--light-yellow-bg-color);
     box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.25);
   }
 
   .milkshakeModalStyle & {
-    background: #d6936d;
-    border: 2px solid #d6936d;
+    background: var(--ginger-bg-color);
+    border: 2px solid var(--ginger-bg-color);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
   }
 }
