@@ -408,6 +408,7 @@
 .ice-horn-list__horn {
   position: absolute;
   filter: drop-shadow(0 0 5rem rgba(252, 252, 252, 0.63));
+  animation-delay: 300ms;
   @media screen and (max-width: 767px) {
     transform: translateX(-50%);
     left: 50%;
@@ -426,7 +427,7 @@
 .ice-horn-list__first-face {
   position: absolute;
   transform: translateX(-50%);
-  animation-delay: 300ms;
+  animation-delay: 500ms;
 
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 240px;
@@ -448,7 +449,7 @@
     top: 240px;
     left: 133px;
   }
-  @media screen and (min-width: 401px) and (max-width: 420px) {
+  @media screen and (min-width: 401px) and (max-width: 421px) {
     top: 240px;
     left: 142px;
   }
@@ -480,7 +481,7 @@
 .ice-horn-list__second-face {
   position: absolute;
   transform: translateX(-50%);
-  animation-delay: 340ms;
+  animation-delay: 540ms;
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 200px;
     left: 150px;
@@ -501,7 +502,7 @@
     top: 200px;
     left: 186px;
   }
-  @media screen and (min-width: 401px) and (max-width: 420px) {
+  @media screen and (min-width: 401px) and (max-width: 421px) {
     top: 200px;
     left: 195px;
   }
@@ -533,7 +534,7 @@
 .ice-horn-list__third-face {
   position: absolute;
   transform: translateX(-50%);
-  animation-delay: 390ms;
+  animation-delay: 590ms;
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 270px;
     left: 158px;
@@ -554,7 +555,7 @@
     top: 270px;
     left: 194px;
   }
-  @media screen and (min-width: 401px) and (max-width: 420px) {
+  @media screen and (min-width: 401px) and (max-width: 421px) {
     top: 270px;
     left: 213px;
   }
