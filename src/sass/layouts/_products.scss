@@ -12,7 +12,6 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 852px;
     background-image: url(../images/bacgrounds/bg-tab@1x.jpg);
     margin: 0 auto;
     background-size: 768px 860px;
@@ -24,9 +23,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    height: 1050px;
     background-size: 1200px 1050px;
-
     background-image: url(../images/bacgrounds/bg-ds@x1.jpg);
     margin: 0 auto;
 
@@ -100,7 +97,7 @@
 .products-list__item {
   position: relative;
   width: 280px;
-  height: 420px;
+
   background: var(--light-green-bg-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -108,16 +105,17 @@
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 85px;
   }
 
   @media screen and (min-width: 768px) {
     width: 224px;
-    height: 428px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 370px;
-    height: 535px;
+    padding-bottom: 130px;
   }
 
   &:nth-child(2) {
@@ -147,7 +145,7 @@
     #d9d9d9;
   box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
   left: 14%;
-  top: -22%;
+  top: -25%;
 
   transition-property: top;
   transition-duration: 700ms;
@@ -468,7 +466,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 40px;
+    position: absolute;
+    left: 44%;
+    bottom: 5%;
   }
 }
 
@@ -562,22 +562,22 @@
 
 .scroll-btn {
   position: fixed;
-  bottom: 1%;
-  right: 1%;
+  bottom: 2%;
+  right: 1.5%;
   border: none;
-  width: 90px;
-  height: 90px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   margin: 0;
   transform: rotate(180deg);
   background-color: inherit;
   cursor: pointer;
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+  z-index: 1000;
+  fill: var(--yellow-bg-color);
 }
 
-.scroll-btn__icon {
-  width: 90px;
-  height: 90px;
+.scroll-btn__icon-arrow {
+  transform: rotate(90deg);
+  width: 50px;
+  height: 50px;
 }
