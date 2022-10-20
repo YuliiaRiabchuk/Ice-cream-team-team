@@ -39,8 +39,7 @@
     width: 90%;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767.5px) {
-    padding: 30px;
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
 
@@ -96,8 +95,21 @@
   }
 }
 
-img {
-  margin: 0 auto;
+.locations__map {
+  display: block;
+  border-radius: 10px;
+
+  @media screen and (min-width: 321px) and (max-width: 479.5px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
 }
 
 .locations__btn {
