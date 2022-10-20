@@ -426,158 +426,161 @@
 .ice-horn-list__first-face {
   position: absolute;
   transform: translateX(-50%);
+  animation-delay: 300ms;
 
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 240px;
-    left: 130px;
+    left: 100px;
   }
   @media screen and (min-width: 325px) and (max-width: 345px) {
     top: 240px;
-    left: 137px;
+    left: 107px;
   }
   @media screen and (min-width: 346px) and (max-width: 360px) {
     top: 240px;
-    left: 146px;
+    left: 114px;
   }
   @media screen and (min-width: 361px) and (max-width: 380px) {
     top: 240px;
-    left: 154px;
+    left: 126px;
   }
   @media screen and (min-width: 381px) and (max-width: 400px) {
     top: 240px;
-    left: 162px;
+    left: 133px;
   }
   @media screen and (min-width: 401px) and (max-width: 420px) {
     top: 240px;
-    left: 176px;
+    left: 142px;
   }
   @media screen and (min-width: 422px) and (max-width: 444px) {
     top: 240px;
-    left: 186px;
+    left: 151px;
   }
   @media screen and (min-width: 445px) and (max-width: 466px) {
     top: 240px;
-    left: 196px;
+    left: 161px;
   }
   @media screen and (min-width: 467px) and (max-width: 479px) {
     top: 240px;
-    left: 200px;
+    left: 170px;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     top: 240px;
-    left: 210px;
+    left: 180px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 64px;
-    left: 67%;
+    left: 60%;
   }
   @media screen and (min-width: 1200px) {
-    top: 130;
-    left: 800;
+    top: 126;
+    left: 700;
   }
 }
 .ice-horn-list__second-face {
   position: absolute;
   transform: translateX(-50%);
+  animation-delay: 340ms;
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 200px;
-    left: 190px;
+    left: 150px;
   }
   @media screen and (min-width: 325px) and (max-width: 345px) {
     top: 200px;
-    left: 200px;
+    left: 159px;
   }
   @media screen and (min-width: 346px) and (max-width: 360px) {
     top: 200px;
-    left: 210px;
+    left: 168px;
   }
   @media screen and (min-width: 361px) and (max-width: 380px) {
     top: 200px;
-    left: 220px;
+    left: 177px;
   }
   @media screen and (min-width: 381px) and (max-width: 400px) {
     top: 200px;
-    left: 230px;
+    left: 186px;
   }
   @media screen and (min-width: 401px) and (max-width: 420px) {
     top: 200px;
-    left: 240px;
+    left: 195px;
   }
   @media screen and (min-width: 422px) and (max-width: 444px) {
     top: 200px;
-    left: 250px;
+    left: 204px;
   }
   @media screen and (min-width: 445px) and (max-width: 466px) {
     top: 200px;
-    left: 260px;
+    left: 213px;
   }
   @media screen and (min-width: 467px) and (max-width: 479px) {
     top: 200px;
-    left: 270px;
+    left: 222px;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     top: 200px;
-    left: 270px;
+    left: 229px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: -5px;
-    left: 78%;
+    left: 70%;
   }
   @media screen and (min-width: 1200px) {
     top: 0;
-    left: 950;
+    left: 840;
   }
 }
-.ice-horn-list__third-face-pic {
+.ice-horn-list__third-face {
   position: absolute;
   transform: translateX(-50%);
+  animation-delay: 390ms;
   @media screen and (min-width: 320px) and (max-width: 324px) {
     top: 270px;
-    left: 200px;
+    left: 158px;
   }
   @media screen and (min-width: 325px) and (max-width: 345px) {
     top: 270px;
-    left: 208px;
+    left: 167px;
   }
   @media screen and (min-width: 346px) and (max-width: 360px) {
     top: 270px;
-    left: 216px;
+    left: 176px;
   }
   @media screen and (min-width: 361px) and (max-width: 380px) {
     top: 270px;
-    left: 224px;
+    left: 185px;
   }
   @media screen and (min-width: 381px) and (max-width: 400px) {
     top: 270px;
-    left: 232px;
+    left: 194px;
   }
   @media screen and (min-width: 401px) and (max-width: 420px) {
     top: 270px;
-    left: 240px;
+    left: 213px;
   }
   @media screen and (min-width: 422px) and (max-width: 444px) {
     top: 270px;
-    left: 248px;
+    left: 222px;
   }
   @media screen and (min-width: 445px) and (max-width: 466px) {
     top: 270px;
-    left: 256px;
+    left: 231px;
   }
   @media screen and (min-width: 467px) and (max-width: 479px) {
     top: 270px;
-    left: 264px;
+    left: 240px;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
     top: 270px;
-    left: 275px;
+    left: 240px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 110px;
-    left: 80%;
+    left: 72%;
   }
   @media screen and (min-width: 1200px) {
     top: 210;
-    left: 970;
+    left: 860;
   }
 }
 .icecream-plate {
