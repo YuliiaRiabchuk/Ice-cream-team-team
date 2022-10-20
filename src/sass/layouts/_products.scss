@@ -574,3 +574,27 @@
     top: 10%;
   }
 }
+
+// Прокрутка
+
+.scroll-btn {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  margin: 0;
+  transform: rotate(180deg);
+  background-color: inherit;
+  cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.scroll-btn__icon {
+  width: 90px;
+  height: 90px;
+}
