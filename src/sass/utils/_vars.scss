@@ -9,11 +9,11 @@
 
   // text-colors
 
-  --main-text-color: #131313;
-  --black-text-color: #000000;
-  --light-text-color: #fcfcfc;
-  --white-text-color: #ffffff;
-  --grey-text-color: #ababab;
+  --main-text-color: rgb(19, 19, 19);
+  --black-text-color: rgb(0, 0, 0);
+  --light-text-color: rgb(252, 252, 252);
+  --white-text-color: rgb(255, 255, 255);
+  --grey-text-color: rgb(171, 171, 171);
   --dark-grey-text-color: #7a7a7a;
   --ginger-text-color: #d6936d;
   --grey-ginger-text-color: #907e82;
@@ -24,11 +24,11 @@
   --light-green-bg-color: #aec6a5;
   --yellow-bg-color: #f8d24e;
   --light-yellow-bg-color: #efd478;
-  --ginger-bg-color: #d6936d;
+  --ginger-bg-color: rgb(214, 147, 109);
   --dark-bg-color: #131313;
   --black-bg-color: #000000;
   --light-bg-color: #fcfcfc;
-  --white-bg-color: #ffffff;
+  --white-bg-color: rgb(255, 255, 255);
   --grey-bg-color: #d9d9d9;
   --bg-backdrop-color: #00800033;
 

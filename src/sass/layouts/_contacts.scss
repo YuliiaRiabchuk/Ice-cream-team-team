@@ -7,12 +7,12 @@
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
-  top: -365px;
+  top: -360px;
   @media screen and (min-width: 768px) {
     top: -290px;
   }
   @media screen and (min-width: 1200px) {
-    top: -100px;
+    top: -90px;
   }
 }
 
@@ -31,7 +31,7 @@
     border-radius: 24px;
     width: 100%;
 
-    background-color: rgba(252, 252, 252, 1);
+    background-color: var(--white-bg-color);
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   }
@@ -59,7 +59,14 @@
   border-radius: 4px;
 
   color: var(--main-text-color);
-  background-color: rgba(248, 210, 78, 1);
+  background-color: var(--yellow-bg-color);
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -99,7 +106,7 @@
   text-decoration: none;
   display: inline-block;
   width: 212px;
-  color: rgba(214, 147, 109, 1);
+  color: var(--ginger-bg-color);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 160px;
@@ -132,7 +139,7 @@
   font-size: 12px;
   line-height: 186%;
 
-  color: rgba(19, 19, 19, 1);
+  color: var(--main-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -149,7 +156,7 @@
   font-size: 12px;
   line-height: 186%;
 
-  color: rgba(171, 171, 171, 1);
+  color: var(--grey-text-color);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -169,9 +176,9 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
 
-  color: rgba(19, 19, 19, 1);
+  color: var(--main-text-color);
   text-decoration: none;
 
   display: block;
@@ -182,12 +189,13 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: 183%;
   }
 }
 
 .contact-tel:hover,
 .contact-tel:focus {
-  color: rgba(214, 147, 109, 1);
+  color: var(--ginger-bg-color);
 }
 
 .contact-mail {
@@ -195,24 +203,26 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
 
-  color: rgba(19, 19, 19, 1);
+  color: var(--main-text-color);
   text-decoration: none;
   display: block;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    line-height: 183%;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    line-height: 183%;
   }
 }
 
 .contact-mail:hover,
 .contact-mail:focus {
-  color: rgba(214, 147, 109, 1);
+  color: var(--ginger-bg-color);
 }
 .button-location {
   @extend %primary-button;
