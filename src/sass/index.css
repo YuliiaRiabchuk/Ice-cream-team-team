@@ -2783,8 +2783,20 @@ footer {
 @media screen and (min-width: 768px) {
   .modal-header {
     width: 568px;
+    height: 644px;
     padding: 32px 40px 32px 40px;
   }
+}
+
+.modal-header.scroll {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .modal-header__btn-close {
