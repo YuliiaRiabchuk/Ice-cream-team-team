@@ -47,6 +47,9 @@
     width: 568px;
     padding: 32px 40px 32px 40px;
   }
+  @media screen and (min-height: 1000px) {
+    max-height: 995px;
+  }
 }
 
 .modal-products.scroll {
