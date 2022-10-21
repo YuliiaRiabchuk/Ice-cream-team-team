@@ -1,3 +1,23 @@
+.gallery-section {
+    position: relative;
+}
+
+.gallery-container {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    // top: -360px;
+
+    @media screen and (min-width: 768px) {
+        // top: -290px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        // top: -90px;
+    }
+}
+
 .slider__bg {
 }
 
