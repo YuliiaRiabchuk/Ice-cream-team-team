@@ -107,10 +107,10 @@
 }
 .header-modal-button {
   @extend %primary-button;
-  &::before {
+  & span::before {
     @extend %btn-icon-white;
   }
-  &::after {
+  & span::after {
     @extend %btn-icon-black;
   }
 
@@ -221,10 +221,10 @@
 
 .burger-menu__order-button {
   @extend %primary-button;
-  &::before {
+  & span::before {
     @extend %btn-icon-white;
   }
-  &::after {
+  & span::after {
     @extend %btn-icon-black;
   }
   margin-left: auto;

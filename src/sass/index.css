@@ -115,6 +115,41 @@
   cursor: pointer;
   transition: background-color 250ms var(--button-timing-function), color 250ms var(--button-timing-function);
 }
+.franchise-form__btn:before, .locations__btn:before, .button:before, .form-products__btn:before, .form-header__btn:before, .button-location:before, .about-text__button:before, .burger-menu__order-button:before, .header-modal-button:before, .franchise-form__btn:after, .locations__btn:after, .button:after, .form-products__btn:after, .form-header__btn:after, .button-location:after, .about-text__button:after, .burger-menu__order-button:after, .header-modal-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  transition: all ease-in-out 2s;
+  background-repeat: no-repeat;
+}
+.franchise-form__btn:before, .locations__btn:before, .button:before, .form-products__btn:before, .form-header__btn:before, .button-location:before, .about-text__button:before, .burger-menu__order-button:before, .header-modal-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, transparent 20%, green 20%, transparent 30%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, transparent 10%, green 15%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.franchise-form__btn:after, .locations__btn:after, .button:after, .form-products__btn:after, .form-header__btn:after, .button-location:after, .about-text__button:after, .burger-menu__order-button:after, .header-modal-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, transparent 10%, green 15%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%), radial-gradient(circle, green 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.franchise-form__btn:active, .locations__btn:active, .button:active, .form-products__btn:active, .form-header__btn:active, .button-location:active, .about-text__button:active, .burger-menu__order-button:active, .header-modal-button:active {
+  transform: scale(0.9);
+}
+.animate.franchise-form__btn:hover:before, .animate.locations__btn:hover:before, .animate.button:hover:before, .animate.form-products__btn:hover:before, .animate.form-header__btn:hover:before, .animate.button-location:hover:before, .animate.about-text__button:hover:before, .animate.burger-menu__order-button:hover:before, .animate.header-modal-button:hover:before {
+  display: block;
+  -webkit-animation: topBubbles ease-in-out 2s forwards;
+          animation: topBubbles ease-in-out 2s forwards;
+}
+.animate.franchise-form__btn:hover:after, .animate.locations__btn:hover:after, .animate.button:hover:after, .animate.form-products__btn:hover:after, .animate.form-header__btn:hover:after, .animate.button-location:hover:after, .animate.about-text__button:hover:after, .animate.burger-menu__order-button:hover:after, .animate.header-modal-button:hover:after {
+  display: block;
+  -webkit-animation: bottomBubbles ease-in-out 2s forwards;
+          animation: bottomBubbles ease-in-out 2s forwards;
+}
 .franchise-form__btn:hover, .locations__btn:hover, .button:hover, .form-products__btn:hover, .form-header__btn:hover, .button-location:hover, .about-text__button:hover, .burger-menu__order-button:hover, .header-modal-button:hover {
   background-color: var(--button-hover-focus-border-bg-color);
 }
@@ -126,10 +161,10 @@
   border: none;
   background-color: var(--button-disabled-border-bg-color);
 }
-.franchise-form__btn:focus::after, .locations__btn:focus::after, .button:focus::after, .form-products__btn:focus::after, .form-header__btn:focus::after, .button-location:focus::after, .about-text__button:focus::after, .burger-menu__order-button:focus::after, .header-modal-button:focus::after {
+.franchise-form__btn:focus ::after, .locations__btn:focus ::after, .button:focus ::after, .form-products__btn:focus ::after, .form-header__btn:focus ::after, .button-location:focus ::after, .about-text__button:focus ::after, .burger-menu__order-button:focus ::after, .header-modal-button:focus ::after {
   opacity: 0;
 }
-.franchise-form__btn:focus::before, .locations__btn:focus::before, .button:focus::before, .form-products__btn:focus::before, .form-header__btn:focus::before, .button-location:focus::before, .about-text__button:focus::before, .burger-menu__order-button:focus::before, .header-modal-button:focus::before {
+.franchise-form__btn:focus ::before, .locations__btn:focus ::before, .button:focus ::before, .form-products__btn:focus ::before, .form-header__btn:focus ::before, .button-location:focus ::before, .about-text__button:focus ::before, .burger-menu__order-button:focus ::before, .header-modal-button:focus ::before {
   opacity: 1;
 }
 
@@ -171,7 +206,7 @@
   opacity: 1;
 }
 
-.button-franchise::before, .button-location::before, .about-text__button span::before, .burger-menu__order-button::before, .header-modal-button::before {
+.button-franchise::before, .button-location::before, .about-text__button span::before, .burger-menu__order-button span::before, .header-modal-button span::before {
   position: absolute;
   top: 50%;
   left: 82%;
@@ -186,7 +221,7 @@
   opacity: 0;
 }
 
-.button-franchise::after, .button-location::after, .about-text__button span::after, .burger-menu__order-button::after, .header-modal-button::after {
+.button-franchise::after, .button-location::after, .about-text__button span::after, .burger-menu__order-button span::after, .header-modal-button span::after {
   position: absolute;
   top: 50%;
   left: 82%;
@@ -201,6 +236,55 @@
   opacity: 1;
 }
 
+@-webkit-keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@-webkit-keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
 h1,
 h2,
 h3,
@@ -1921,19 +2005,6 @@ html {
           animation: bottomBubbles ease-in-out 2s forwards;
 }
 
-@-webkit-keyframes topBubbles {
-  0% {
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
-  50% {
-    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
-  }
-  100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-  }
-}
-
 @keyframes topBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
@@ -1943,18 +2014,6 @@ html {
   }
   100% {
     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-  }
-}
-@-webkit-keyframes bottomBubbles {
-  0% {
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-  }
-  50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
-  }
-  100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
