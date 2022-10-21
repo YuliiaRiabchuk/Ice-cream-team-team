@@ -1,24 +1,24 @@
 // BASE STYLES
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 
-    background-color: var(--green-bg-color);
+  background-color: var(--green-bg-color);
 }
 
 .section {
-    // phone
-    padding-top: 60px;
-    padding-bottom: 60px;
+  // phone
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    // outline: 2px solid rgb(23, 168, 161);
+  // outline: 2px solid rgb(23, 168, 161);
 
-    // tablet
+  // tablet
 
-
-    // desktop
-
-
+  // desktop
+}
+html {
+  scroll-behavior: smooth;
 }
