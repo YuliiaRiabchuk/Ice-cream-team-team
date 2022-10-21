@@ -224,16 +224,41 @@
 .contact-mail:focus {
   color: var(--ginger-bg-color);
 }
+
+.contacts-buttons {
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 16px;
+  }
+}
+
 .button-location {
+  // @extend %primary-button;
+  // width: 196px;
+  // margin-left: auto;
+  // margin: auto;
+  // margin-bottom: 16px;
+  // &::before {
+  //   @extend %btn-icon-white;
+  // }
+  // &::after {
+  //   @extend %btn-icon-black;
+  // }
+  // @media screen and(min-width: 768px) {
+  //   margin: 0;
+  // }
   @extend %primary-button;
   width: 196px;
   margin-left: auto;
   margin: auto;
   margin-bottom: 16px;
-  &::before {
+  & span::before {
     @extend %btn-icon-white;
   }
-  &::after {
+  & span::after {
     @extend %btn-icon-black;
   }
   @media screen and(min-width: 768px) {
@@ -254,15 +279,5 @@
   }
   @media screen and (min-width: 768px) {
     margin: 0%;
-  }
-}
-
-.contacts-buttons {
-  margin-top: 60px;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    gap: 16px;
   }
 }
