@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Viktor-Shadura.github.io/ice-cream__teamwork",
+  "homepage": "https://YuliiaRiabchuk.github.io/Ice-cream-team-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream__teamwork/"
+    "build": "parcel build src/*.html --public-url /Ice-cream-team-team/"
   },
   "repository": {
     "type": "git",
